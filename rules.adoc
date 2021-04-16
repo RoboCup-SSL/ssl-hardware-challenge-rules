@@ -154,8 +154,8 @@ Within a limited time, the team is asked to perform as many passes as possible. 
 Teams are free in how they perform the passes, as long as the following constraints are met:
 
 - A valid pass must be at least *1.5m* long.
-- The shooter of the previous pass (valid or invalid) can not be the receiver of the current pass (this means you need *at least 3 robots*).
-- A pass must be directed at least *10°* away from where the last pass (valid or invalid) came from (so two robots can not pass back and forth without changing positions).
+- The shooter of the previous pass can not be the receiver of the current pass (this means you need *at least 3 robots*).
+- A pass must be directed at least *10°* away from where the previous pass came from.
 - The ball must not exceed 6.5 m/s (as defined in the tournament rules).
 
 Additionally, the following rules apply:
