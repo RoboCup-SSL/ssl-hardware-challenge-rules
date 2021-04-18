@@ -151,24 +151,37 @@ Within a limited time, the team is asked to perform as many passes as possible. 
 
 ==== Rules
 
-Teams are free in how they perform the passes, as long as the following constraints are met:
+Teams are free in how they perform the passes. Definitions of a pass in general and additional constrains for valid
+pass that are considered in the scoring are given in this section.
 
-- A valid pass must be at least *1.5m* long.
-- The shooter of the previous pass can not be the receiver of the current pass (this means you need *at least 3 robots*).
-- A pass must be directed at least *10°* away from where the previous pass came from.
+A pass is defined as follows:
+
+- A pass has a source position, a target position and a shooter.
+- The source position is where the ball was kicked by a robot.
+- The target position is where the ball either stops or changes direction by more than 30 degrees.
+- The shooter is the robot located nearest to the source position when the pass started.
+- The pass distance is the euclidean distance between source and target position.
+- The pass direction is the orientation of the vector of `target - source`.
+
+A valid pass must additionally met the following constraints:
+
+- The pass distance must be at least *1.5m*.
+- The shooter of the previous pass can not be the receiver of the current pass (this implicitly means you need *at least 3 robots*).
+- The pass direction of the pass must differ by at least *10 degrees* from the inverted previous pass direction: latexmath:[abs(passDirection_{cur} - (passDirection_{previous} + 180°)) > 10°]
 - The ball must not exceed 6.5 m/s (as defined in the tournament rules).
+
+NOTE: Previous passes include all passes, not only those considered valid.
 
 Additionally, the following rules apply:
 
 - The number of robots is limited to *6 robots*.
 - The minimum field size is *4x3m*, but teams are allowed to play on a larger field if they wish to do so.
-- Even in an event of an invalid pass, the sequence of passes used to validate the rules will assume that all passes were valid. This means that whenever a rule refers to the term previous pass, it can be both a valid or invalid one.
 - Teams are allowed and encouraged to recover the ball from the field boundary.
 - Any human interference, including exchanging robots, reduces the final number of passes by *10*.
 
 ==== Evaluation
 
-The team with most passes wins. If teams have the same number of passes, they will share the better position.
+The team with most valid passes wins. If teams have the same number of passes, they will share the better position.
 
 [appendix]
 
