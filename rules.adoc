@@ -36,7 +36,7 @@ The objective of this challenge is to score a goal from a number of static situa
 
 ==== Procedure
 
-There will be ten different situations in random order that teams have to handle. The situations include the positions of the opponent robots and the ball. They will be announced a month before the competition at latest.
+There will be ten different situations in random order that teams have to handle. They are specifieid link:Challenge1/challenge1.adoc[here]. The situations include the positions of the opponent robots and the ball. 
 
 For each situation, the following procedure applies:
 
