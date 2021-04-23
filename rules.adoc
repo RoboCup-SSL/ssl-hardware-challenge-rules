@@ -36,7 +36,7 @@ The objective of this challenge is to score a goal from a number of static situa
 
 ==== Procedure
 
-There will be ten different situations in random order that teams have to handle. They are specifieid link:Challenge1/challenge1.adoc[here]. The situations include the positions of the opponent robots and the ball. 
+There will be ten different situations in random order that teams have to handle. They are specified below. The situations include the positions of the opponent robots and the ball. 
 
 For each situation, the following procedure applies:
 
@@ -45,6 +45,8 @@ For each situation, the following procedure applies:
 3. A STOP command will be issued for exactly *5s* to allow the team to prepare their robots.
 4. Immediately afterwards, a *Normal Free Kick* command will be issued and the timer will start.
 5. The team has *20s* to score a goal. Afterwards, the trial is over.
+
+include::Challenge1/challenge1.adoc[]
 
 ==== Rules
 
