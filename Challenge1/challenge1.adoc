@@ -8,7 +8,7 @@ Description: Free kick far from the goal with two defenders and a goalkeeper. +
 {"ball":{"pos":[-200,-1800,0]},"bots":[{"obj":{"pos":[-2900,0,-0.785398]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-2000,-750,0]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-2000,-550,0]},"id":{"number":2,"color":"YELLOW"}}]}
 ----
 
-image::scenario1.svg[static,400]
+image::Challenge1/scenario1.svg[static,400]
 
 ===== Scenario 2
 Amount of opponents: 3 +
@@ -20,7 +20,7 @@ Description: Free kick on the middle line with two defenders and a goalkeeper. +
 {"ball":{"pos":[-1000,0,0]},"bots":[{"obj":{"pos":[-2900,175,0.785398]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-2000,-175,0]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-1500,0,0]},"id":{"number":2,"color":"YELLOW"}}]}
 ----
 
-image::scenario2.svg[static,400]
+image::Challenge1/scenario2.svg[static,400]
 
 ===== Scenario 3
 Amount of opponents: 4 +
@@ -32,7 +32,7 @@ Description: Free kick from the center of the field with three opponents and a g
 {"ball":{"pos":[-200,0,0]},"bots":[{"obj":{"pos":[-2900,0,0]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-2000,500,0]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-2000,-500,0]},"id":{"number":2,"color":"YELLOW"}},{"obj":{"pos":[-1000,0,0]},"id":{"number":3,"color":"YELLOW"}}]}
 ----
 
-image::scenario3.svg[static,400]
+image::Challenge1/scenario3.svg[static,400]
 
 ===== Scenario 4
 Amount of opponents: 4 +
@@ -44,7 +44,7 @@ Description: Free kick from the middle line with three opponents and a goalkeepe
 {"ball":{"pos":[-1400,0,0]},"bots":[{"obj":{"pos":[-2900,0,0]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-1950,500,0]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-1950,0,0]},"id":{"number":2,"color":"YELLOW"}},{"obj":{"pos":[-1950,-500,0]},"id":{"number":3,"color":"YELLOW"}}]}
 ----
 
-image:scenario4.svg[static,400]
+image::Challenge1/scenario4.svg[static,400]
 
 ===== Scenario 5
 Amount of opponents: 5 +
@@ -56,7 +56,7 @@ Description: Free kick from the top-left part of the field with 4 opponents and 
 {"ball":{"pos":[-2850,1750,0]},"bots":[{"obj":{"pos":[-2900,-200,-0.785398]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-2850,1100,1.5708]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-2000,500,0]},"id":{"number":2,"color":"YELLOW"}},{"obj":{"pos":[-2000,0,0]},"id":{"number":3,"color":"YELLOW"}},{"obj":{"pos":[-1450,1750,3.14]},"id":{"number":4,"color":"YELLOW"}}]}
 ----
 
-image:scenario5.svg[static,400]
+image::Challenge1/scenario5.svg[static,400]
 
 ===== Scenario 6
 Amount of opponents: 5 +
@@ -68,7 +68,7 @@ Description: Free kick from the bottom-right part of the field with four opponen
 {"ball":{"pos":[-950,-1550,0]},"bots":[{"obj":{"pos":[-2900,0,0]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-2000,950,0.785398]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-2400,1250,0.785398]},"id":{"number":2,"color":"YELLOW"}},{"obj":{"pos":[-2000,360,-0.785398]},"id":{"number":3,"color":"YELLOW"}},{"obj":{"pos":[-1450,-1210,0]},"id":{"number":4,"color":"YELLOW"}}]}
 ----
 
-image::scenario6.svg[static,400]
+image::Challenge1/scenario6.svg[static,400]
 
 ===== Scenario 7
 Amount of opponents: 5 +
@@ -80,7 +80,7 @@ Description: Free kick from the bottom-left part of the field with four opponent
 {"ball":{"pos":[-2800,-1800,0]},"bots":[{"obj":{"pos":[-2910,-300,-1.571]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-2600,1200,1.571]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-1700,-350,0]},"id":{"number":2,"color":"YELLOW"}},{"obj":{"pos":[-2300,-1300,-2.356]},"id":{"number":3,"color":"YELLOW"}},{"obj":{"pos":[-2000,300,0]},"id":{"number":4,"color":"YELLOW"}}]}
 ----
 
-image::scenario7.svg[static,400]
+image::Challenge1/scenario7.svg[static,400]
 
 ===== Scenario 8
 Amount of opponents: 6 +
@@ -92,7 +92,7 @@ Description: Free kick from the top-right corner with five opponents and a goalk
 {"ball":{"pos":[-200,1800,0]},"bots":[{"obj":{"pos":[-2900,100,0]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-2250,1200,0.785]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-2050,800,0]},"id":{"number":2,"color":"YELLOW"}},{"obj":{"pos":[-2050,400,0]},"id":{"number":3,"color":"YELLOW"}},{"obj":{"pos":[-2050,-400,0]},"id":{"number":4,"color":"YELLOW"}},{"obj":{"pos":[-2050,-800,0]},"id":{"number":5,"color":"YELLOW"}}]}
 ----
 
-image::scenario8.svg[static,400]
+image::Challenge1/scenario8.svg[static,400]
 
 ===== Scenario 9
 Amount of opponents: 6 +
@@ -104,7 +104,7 @@ Description: Free kick from the bottom-left part of the field with five opponent
 {"ball":{"pos":[-2800,-1750,0]},"bots":[{"obj":{"pos":[-2910,-300,-1.571]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-2050,1050,0]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-800,1000,-0.785]},"id":{"number":2,"color":"YELLOW"}},{"obj":{"pos":[-1350,350,0]},"id":{"number":3,"color":"YELLOW"}},{"obj":{"pos":[-1550,-600,0]},"id":{"number":4,"color":"YELLOW"}},{"obj":{"pos":[-2200,-1200,0.785]},"id":{"number":5,"color":"YELLOW"}}]}
 ----
 
-image::scenario9.svg[static,400]
+image::Challenge1/scenario9.svg[static,400]
 
 ===== Scenario 10
 Amount of opponents: 6 +
@@ -116,4 +116,4 @@ Description: Free kick from within the field with five opponents and a goalkeepe
 {"ball":{"pos":[-1300,650,0]},"bots":[{"obj":{"pos":[-2900,-150,0]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-2400,1250,0.785]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-2000,450,0]},"id":{"number":2,"color":"YELLOW"}},{"obj":{"pos":[-1300,0,1.571]},"id":{"number":3,"color":"YELLOW"}},{"obj":{"pos":[-1850,-300,-0.785]},"id":{"number":4,"color":"YELLOW"}},{"obj":{"pos":[-2000,-900,0]},"id":{"number":5,"color":"YELLOW"}}]}
 ----
 
-image::scenario10.svg[static,400]
+image::Challenge1/scenario10.svg[static,400]
