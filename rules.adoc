@@ -1,3 +1,7 @@
+:source-highlighter: pygments
+:pygments-style: emacs
+:icons: font
+
 = RoboCup Small Size League (SSL) Hardware Challenges 2021
 :toc:
 :toclevels: 3
