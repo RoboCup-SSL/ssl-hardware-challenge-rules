@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 992.13 1275.59">
+    <defs>
+        <style>
+            .cls-1,.cls-4,.cls-5{fill:none;}.cls-2{fill:green;}.cls-3{clip-path:url(#clip-path);}.cls-4{stroke:#ff0;}.cls-4,.cls-5{stroke-linecap:round;stroke-width:2px;}.cls-5{stroke:#fff;}.cls-6,.cls-7{isolation:isolate;}.cls-7{font-size:15px;fill:#fff;font-family:ArialMT,
+            Arial;}.cls-8{clip-path:url(#clip-path-2);}.cls-9{fill:lime;}.cls-10{fill:#f0f;}.cls-11{fill:#ff0;}
+        </style>
+        <clipPath id="clip-path">
+            <rect class="cls-1" x="7.88" y="521.96" width="63.17" height="236.17"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <rect class="cls-1" x="609.9" y="959.64" width="61.19" height="45.38"
+                  transform="translate(-507.01 740.61) rotate(-45)"/>
+        </clipPath>
+    </defs>
+    <title>RoboCupChallenges</title>
+    <g id="Layer_3" data-name="Layer 3">
+        <g id="layer1">
+            <rect id="rect12-6" class="cls-2" y="1.67" width="992.13" height="1275.59"/>
+            <g class="cls-3">
+                <rect id="rect10-3" class="cls-4" x="27.63" y="540.25" width="85.04" height="198.43"/>
+            </g>
+            <rect id="rect12" class="cls-5" x="70.87" y="72.53" width="850.39" height="1133.86"/>
+            <rect id="rect10" class="cls-5" x="70.87" y="356" width="226.77" height="566.93"/>
+            <path id="path873" class="cls-5" d="M921.26,781.19a141.73,141.73,0,1,1,0-283.46"/>
+        </g>
+        <g id="text1560" class="cls-6">
+            <text class="cls-7" transform="translate(644.65 922.93)">(-1000, -1250)</text>
+            <text class="cls-7" transform="translate(644.65 941.68)">-45º</text>
+        </g>
+        <g id="g1556">
+            <g class="cls-8">
+                <circle id="path1045-9-6" cx="644.89" cy="986.53" r="25.51"
+                        transform="translate(-508.7 744.96) rotate(-45)"/>
+            </g>
+            <circle id="path903-5-7-88" class="cls-9" cx="662.84" cy="982.45" r="5.69"/>
+            <circle id="path903-56-3-43" class="cls-10" cx="640.81" cy="1004.48" r="5.69"/>
+            <circle id="path903-56-2-6-1" class="cls-11" cx="644.79" cy="986.43" r="7.11"/>
+            <circle id="path903-56-9-12-49" class="cls-10" cx="640.81" cy="968.38" r="5.69"/>
+            <circle id="path903-56-9-1-9-2" class="cls-9" cx="626.74" cy="982.45" r="5.69"/>
+        </g>
+        <image id="image170" class="cls-6" width="53" height="53"
+               transform="matrix(0.17, 0.17, -0.17, 0.17, 664.69, 997.34)"
+               xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAA1CAYAAADh5qNwAAAACXBIWXMAAAsSAAALEgHS3X78AAADyklEQVRoQ93az4tVZRzH8ddzdJqxxEnUfiwiCHR007IczIEW4aKWiZEtMiRlNKMggwiCFkZYUEo6Nx0MRKhGok0t2pmK+gcoWot+oJlJ/iwd7tx7nxZ3LnNHz72nOz/0nnnvznPez4EPz3POec7zPSHGaMrYEuYZ1idYLuoRLMEi3Id5uIZ/cVH0E07jhLJDBuP1xhdujTDpUP1hvoo1orXoxaysLimUBMdEBxR9ZV+8ktWhGRMP1R8eU7YVL6Mzw26FYexTsd2e+EuWnEbrofrDfCXbBOsxO0ufBCUUFL3b6si1FmpjWCPagQey1CnkAl5TiENZYo3/F2pd6HKPD7ElS51G9mOjQryRJWaH2hAWir4TPNFcvCMcU/acvfFSM6l5qE3hESU/YGlj6Y5zSsUqe+LZRkLjUJvDAiMOY1m6cFf5WeIpu+NfaSeTtEZvhjmKvteegWCxim+tC11pJ9ND3fBpm9xDzejV6eO0E7dPv+pj+8s0uS0JVhuIB8c1jQvVH+YrO+3OvocmywVFS+tf0OOnX8k2+QoED+rwfn3D2EhV13JnTO/SZ7oYkVhid/yV+pEqe1s+A0GH6K3aQXWkqvfSH0h9ROaEYUUP2xevVEeq7AX5DgRdOqxmbPq92ETOD8FLEOKruvG3iX2xthslnRYkgj4zIxDMNmxFInoyy8wVQW+ivT4rJk/Qk2BxlpcroiWJ/C2LsliUYG6WlTPmJZiTZeWMexPczLJyxo0E/2RZOeNagtTNixxzMRmtPswkziSq5ZSZQ6iGOpHl5YqK44myQ6oVhplASdmRxGC8LjiWZeeC6IjBeD0ZPTiQoeeDUM1RDTXL16oVvDxzE0PUQu2Kl0VfNOmQBwYV4lXqt8iCDzDSqEebM6Lso9rBWKhC/B2fp/Voe4Jd9sbfaofjt507vYPzt/Zpc/4UvVffMD7UjngNr8sTwabavVTj9vpUIQ6JBm5rb0einQbiN7c2pxfdRrxBm7+Qo6O6xvbP62lc890QuvEjHk8X7ionlfU1qtKnjxQU4lUVz+JUQ+fucFJiVbPfDhqHgj3xrLKV2mUqRkfNstLueK6Z1jwU7I2XdHoaO7LUaWa/uZ6xK17OErP/eKlnY3hetBMPZalTyHnB5rSnXCOyR6qegXhQ0bLRYNO9pCriE52WthKIVkeqnvXhUbNtFb1iagt2NzGI7aNLt5aZeKga68L9OqwWrMUKE6sbl0RHRr+Hhm5dIbTK5EPVsynMVdYnWi7oEfVgoerWdjeuqu4zXhRG/6GtOK7DYZ/FKdt//A9Ilj/2wcgIHgAAAABJRU5ErkJggg=="/>
+    </g>
+</svg>

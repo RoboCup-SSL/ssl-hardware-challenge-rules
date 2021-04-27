@@ -1,0 +1,41 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 992.13 1275.59">
+    <defs>
+        <style>
+            .cls-1,.cls-4,.cls-5{fill:none;}.cls-2{fill:green;}.cls-3{clip-path:url(#clip-path);}.cls-4{stroke:#ff0;}.cls-4,.cls-5{stroke-linecap:round;stroke-width:2px;}.cls-5{stroke:#fff;}.cls-6,.cls-7{isolation:isolate;}.cls-7{font-size:15px;fill:#fff;font-family:ArialMT,
+            Arial;}.cls-8{clip-path:url(#clip-path-2);}.cls-9{fill:lime;}.cls-10{fill:#f0f;}.cls-11{fill:#ff0;}
+        </style>
+        <clipPath id="clip-path">
+            <rect class="cls-1" x="9.07" y="520.38" width="63.17" height="236.17"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <rect class="cls-1" x="609.39" y="607.87" width="45.38" height="61.19"/>
+        </clipPath>
+    </defs>
+    <title>RoboCupChallenges</title>
+    <g id="Field">
+        <rect id="rect12-6" class="cls-2" x="1.19" y="0.08" width="992.13" height="1275.59"/>
+        <g class="cls-3">
+            <rect id="rect10-3" class="cls-4" x="28.81" y="538.67" width="85.04" height="198.43"/>
+        </g>
+        <rect id="rect12" class="cls-5" x="72.06" y="70.95" width="850.39" height="1133.86"/>
+        <rect id="rect10" class="cls-5" x="72.06" y="354.41" width="226.77" height="566.93"/>
+        <path id="path873" class="cls-5" d="M922.45,779.61a141.73,141.73,0,1,1,0-283.46"/>
+    </g>
+    <g id="text1560" class="cls-6">
+        <text class="cls-7" transform="translate(627.14 573.37)">(-1000, 0)</text>
+        <text class="cls-7" transform="translate(627.14 592.12)">0º</text>
+    </g>
+    <g id="g1556">
+        <g class="cls-8">
+            <circle id="path1045-9-6" cx="638.16" cy="638.32" r="25.51"/>
+        </g>
+        <circle id="path903-5-7-88" class="cls-9" cx="647.97" cy="622.75" r="5.69"/>
+        <circle id="path903-56-3-43" class="cls-10" cx="647.97" cy="653.9" r="5.69"/>
+        <circle id="path903-56-2-6-1" class="cls-11" cx="638.02" cy="638.32" r="7.11"/>
+        <circle id="path903-56-9-12-49" class="cls-10" cx="622.44" cy="628.37" r="5.69"/>
+        <circle id="path903-56-9-1-9-2" class="cls-9" cx="622.44" cy="648.27" r="5.69"/>
+    </g>
+    <image id="image170" class="cls-6" width="53" height="53" transform="translate(657.76 633.1) scale(0.24)"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAACXBIWXMAAC4jAAAuIwF4pT92AAAD50lEQVRoQ92az2scZRjHP88m66YaUkNbfxxEEJqkF4+1oTbgQXrQo6FiPRgpNCS1omAFEQQPFamCpphkTZYIpaCmiBc9eKtNSfsHtKT14A+qtQbbJqlJ2N3Zx8Nk2MnuzPtmk9103nxu877fd+HD887Mu+87oqpsRZptgZo5Lm0s04OwD6UToQPYBTwEtAHzwH/ALMp1YAa4jMd5croQ/8O1IXWp2IC0U+IQymGgG2iyDYmgiDCNcpY83zChd20DTGxMbECewuME8BqQsaRrYRmYoMQpxvRXWziK9YkNSDtFTiIcoRHTuUwRyJLn/VorWLtYvxxCGQIesUXryC3gDbI6aQsGrF2sT1p4gI+B47ZoAzkD9JPVRVtwbWJHZSfKDwh7bdFNYBqPFxnX26aQXWxQnqDIT0CXObipXKXEQcb0RlzALHZMdlDgArAnPnTf+IUUzzKi/0R1pqIaAXhbtpHnR5IpBbCbEt/TJy1RnfFii3yekHvKRDcZPo3qiJ6K/iP96+qOhCL0MqrnVjVViQ1IOx4zbO57aqPcIk9X+CVePRWLnMQtKYBHSfNhuGF1xfy13zUau0xqFAVSdDCiv0FlxTzexU0pgDTKO8FFuWL+vfUXEPn4dIRl8jzOhN4tV8zjZdyWAmghTS+snoqvxITdQngVgql4VLYD/7K+f75Jo0iGHX7FhB62hhRAM8vs98WUZyxhtxC6g3ssSX9JNo7QGYjtNgZdQ+kIxFxbQtnYFYi1GmPu0RaIbTPG3OPBQGzJGHOPxUDsnjHmHvOBWOSGiMPMBi/o65aga1wLKjZjjLmGlMUuG4OuUeKSL+ZxHv9kYytQxGPKF8vpAsK0ZYAbKFPkdCEVajhriLuD+B5lsSa+xT9JdJklYBLCYsN6B+WrmAGukCOrc1C5/SZ8BBSiRjhAAY9PgovVYln9A/iycoQTCMOM6+/BZfUWd4b3gJtV7cnmb5QPwg3VYkM6D7xZ1Z5khMHg3gqIPh/L6iTKaGRf0lBOM6rfVTbHH/wVeAsS/tJWLtJS3q8PYz6D9jdSfwaejg/dN67g0RP39UB8xQCyOkeJF4Crxtzmc4UUB02fRJjFAMb0Bh4HSMq0VC7SxAFG9E9TzC4GMK63yfAcMGSLNpgztPI8w3rHFrR/wFJJv7yEchp4zBatIzcRjkU9/eJYW8XCjOo58uxZkWv08isPfEaGrlqkYD0VC3NEnqSZEyivU99DwyUgB5xaWebVzMbEAvrkYdL0IhwG9rO+c+wiytTK/6nJypVErdRHLMygtOLRg7IPoROlE9iJv42+HZjD38ecRVa+CS5xiTQX+ELrtr/5P5YTQfqdsJ4vAAAAAElFTkSuQmCC"/>
+</svg>

@@ -1,0 +1,19 @@
+=== Scenario 1
+
+image::scenarios-challenge-2/scenario1.svg[static,400]
+
+=== Scenario 2
+
+image::scenarios-challenge-2/scenario2.svg[static,400]
+
+=== Scenario 3
+
+image::scenarios-challenge-2/scenario3.svg[static,400]
+
+=== Scenario 4
+
+image::scenarios-challenge-2/scenario4.svg[static,400]
+
+=== Scenario 5
+
+image::scenarios-challenge-2/scenario5.svg[static,400]

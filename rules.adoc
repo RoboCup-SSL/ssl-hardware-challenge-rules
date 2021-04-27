@@ -73,7 +73,7 @@ In this challenge, the objective is to score a goal as fast as possible in a sit
 
 ==== Procedure
 
-There will be three different situations in random order that teams have to handle. The situations include the position of the defender, the attacker and the ball. They will be announced a month before the competition at latest.
+There will be five different situations in random order that teams have to handle. They are specified in the appendix <<Scenarios for Challenge 2>>. The situations include the positions of the opponent robots and the ball.
 
 For each situation, the following procedure applies:
 
@@ -175,3 +175,9 @@ The team with most passes wins. If teams have the same number of passes, they wi
 == Scenarios for Challenge 1
 
 include::scenarios-challenge-1.adoc[]
+
+[appendix]
+
+== Scenarios for Challenge 2
+
+include::scenarios-challenge-2.adoc[]
