@@ -107,17 +107,33 @@ To test the dribbling capabilities of the team, one robot of the team must navig
 The team has *three trials* to complete a predefined parkour. The procedure for each trial is as follows:
 
 - A *FORCE_START* command will be issued and the timer will start.
-- The team has *2min* to finish the parkour. Afterwards, the trial is over.
+- The team has *2 min* to finish the parkour. Afterwards, the trial is over.
 - If the robot has finished the parkour and came to a complete stop, the timer is stopped.
 
-The parkour will look similar to
+The parkour will look like this:
 
-- A Zigzag line.
-- Obstacles will be on a straight line.
-- Last gate needs to be passed three times.
-- Exact spacing will be published a month before the competition at latest.
+image::scenarios-challenge-3/scenario1.svg[Interactive,700,opts=interactive]
 
-image:parkour.png[image,width=601,height=154]
+Here are the positions encoded as JSON:
+[source,json]
+----
+{"ball":{"pos":[-1500,-1500,0.0]},"bots":[{"obj":{"pos":[-1500,1500,0]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-1500,900,0]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-1500,400,0]},"id":{"number":2,"color":"YELLOW"}},{"obj":{"pos":[-1500,-200,0]},"id":{"number":3,"color":"YELLOW"}},{"obj":{"pos":[-1500,-1000,0]},"id":{"number":4,"color":"YELLOW"}},{"obj":{"pos":[-1500,-1900,1.57]},"id":{"number":0,"color":"BLUE"}}]}
+----
+
+The parkour is to be interpreted as follows:
+
+- The robots and the ball will stand on a straight line, as defined in the image.
+- The absolute positions of the robot can be changed if needed as long as the relative distances are still the same.
+- The robot ids can be interchanged arbitrarily, as long as they are unique.
+- Each pair of two neighboring yellow robots form a gate.
+- Each gate needs to be crossed in any direction.
+- A gate is crossed, if the ball fully crossed the line between the two robot centers.
+- The gates need to be crossed from closest to farthest.
+- The last gate needs to be crossed three times.
+
+This is an example of how a robot may navigate through the parkour:
+
+image:scenarios-challenge-3/parkour.png[image,width=601,height=154]
 
 ==== Rules
 
@@ -134,6 +150,8 @@ The following rules apply in this challenge:
 ==== Evaluation
 
 The fastest trial per team is taken for overall scoring.
+
+The number of crossed gates will be used as a tiebreaker, if multiple teams have failed all trials.
 
 === Challenge 4: Pass endurance
 
