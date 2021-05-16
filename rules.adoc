@@ -73,7 +73,10 @@ In this challenge, the objective is to score a goal as fast as possible in a sit
 
 ==== Procedure
 
-There will be five different situations in random order that teams have to handle. They are specified in the appendix <<Scenarios for Challenge 2>>. The situations include the positions of the opponent robots and the ball.
+There will be five different situations in random order that teams have to handle. They are specified in the appendix <<Scenarios for Challenge 2>>. The situations include the positions of the opponent robots.
+The ball is touching the defenders dribbler.
+The attacker is placed in front of the ball, exactly opposite of the defender.
+The distance between the ball center and the attacking robot center must be 0.3 m.
 
 For each situation, the following procedure applies:
 
