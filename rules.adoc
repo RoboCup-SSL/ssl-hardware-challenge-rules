@@ -88,6 +88,7 @@ The following rules apply for this challenge:
 - Normal Division B match rules apply. If the team performs a foul or the ball leaves the field, the trial is over.
 - No human interference is allowed during each trial.
 - The opponent robot must be a real robot, but it does not need to be able to move.
+- The opponent robot may actively hold its position.
 - The goal must be *0.7m* wide. Teams should provide a visible goal with the correct dimensions to make evaluation easier.
 - Teams need to calibrate ssl-vision for a half field with *3x4m*. This means, the full field would be *6x4m* (standard field size). The goal is on the 4m side. The actual field size can be larger, but the ball will be out of field, when leaving the ssl-vision-calibrated field (checked by an autoRef).
 - The penalty area must be *0.8x2m* in size.
