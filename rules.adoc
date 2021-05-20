@@ -22,9 +22,13 @@ For all hardware challenges, the following rules apply:
 
 == Evaluation
 
-For each challenge, teams are ranked in order of performance. The exact scoring depends on the challenge.
+For each challenge, teams are ranked in order of performance.
+The exact scoring depends on the challenge and is described in the individual sections.
+The overall rank will be determined by the minimum sum of all four ranks.
 
-The algorithm for combining the scores/ranks of the challenges will be published a month before the competition at latest.
+In case of a tie, the scores (sum of relative times) of challenge 1 and 2 are added per team, and the team with the lower
+score wins. If there is still a tie, the faster team of challenge 3 wins. Lastly, if that still leads to a tie, the
+team with most passes in challenge 4 wins.
 
 A member of OC/TC will be assigned to each challenge and act as the referee. The TC may provide a tool that helps with evaluation of the challenge. The referee has the final decision of the result.
 
@@ -40,7 +44,10 @@ The objective of this challenge is to score a goal from a number of static situa
 
 ==== Procedure
 
-There will be ten different situations in random order that teams have to handle. They are specified in the appendix <<Scenarios for Challenge 1>>. The situations include the positions of the opponent robots and the ball. 
+There will be ten different situations in random order that teams have to handle.
+They are specified in the appendix <<Scenarios for Challenge 1>>.
+The situations include the positions of the opponent robots and the ball.
+For each situation, the team has three trials, out of which the best counts.
 
 For each situation, the following procedure applies:
 
@@ -63,7 +70,8 @@ The following rules apply for this challenge:
 
 ==== Evaluation
 
-The exact algorithm for the evaluation will be published one month before the competition at latest.
+For each situation, the fastest time of each team is divided by the median over the fastest times per trial of all teams.
+These ten scores are summed up. Based on the result, teams are ranked from low to high.
 
 === Challenge 2: Scoring from contested possession
 
@@ -77,6 +85,7 @@ There will be five different situations in random order that teams have to handl
 The ball is touching the defenders dribbler.
 The attacker is placed in front of the ball, exactly opposite of the defender.
 The distance between the ball center and the attacking robot center must be 0.3 m.
+For each situation, the team has three trials, out of which the best counts.
 
 For each situation, the following procedure applies:
 
@@ -98,7 +107,8 @@ The following rules apply for this challenge:
 
 ==== Evaluation
 
-The exact algorithm for the evaluation will be published one month before the competition at latest.
+For each situation, the fastest time of each team is divided by the median over the fastest times per trial of all teams.
+These five scores are summed up. Based on the result, teams are ranked from low to high.
 
 === Challenge 3: Dribbling
 
