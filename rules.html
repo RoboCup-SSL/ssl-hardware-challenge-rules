@@ -547,10 +547,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_evaluation">Evaluation</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>For each challenge, teams are ranked in order of performance. The exact scoring depends on the challenge.</p>
+<p>For each challenge, teams are ranked in order of performance.
+The exact scoring depends on the challenge and is described in the individual sections.
+The overall rank will be determined by the minimum sum of all four ranks.</p>
 </div>
 <div class="paragraph">
-<p>The algorithm for combining the scores/ranks of the challenges will be published a month before the competition at latest.</p>
+<p>In case of a tie, the scores (sum of relative times) of challenge 1 and 2 are added per team, and the team with the lower
+score wins. If there is still a tie, the faster team of challenge 3 wins. Lastly, if that still leads to a tie, the
+team with most passes in challenge 4 wins.</p>
 </div>
 <div class="paragraph">
 <p>A member of OC/TC will be assigned to each challenge and act as the referee. The TC may provide a tool that helps with evaluation of the challenge. The referee has the final decision of the result.</p>
@@ -574,7 +578,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect3">
 <h4 id="_procedure">Procedure</h4>
 <div class="paragraph">
-<p>There will be ten different situations in random order that teams have to handle. They are specified in the appendix <a href="#_scenarios_for_challenge_1">Scenarios for Challenge 1</a>. The situations include the positions of the opponent robots and the ball.</p>
+<p>There will be ten different situations in random order that teams have to handle.
+They are specified in the appendix <a href="#_scenarios_for_challenge_1">Scenarios for Challenge 1</a>.
+The situations include the positions of the opponent robots and the ball.
+For each situation, the team has three trials, out of which the best counts.</p>
 </div>
 <div class="paragraph">
 <p>For each situation, the following procedure applies:</p>
@@ -596,6 +603,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li>
 <p>The team has <strong>20s</strong> to score a goal. Afterwards, the trial is over.</p>
 </li>
+<li>
+<p>The timer is stopped when a valid goal is scored.</p>
+</li>
 </ol>
 </div>
 </div>
@@ -607,7 +617,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>Normal Division B match rules apply. If the team performs a foul or the ball leaves the field, the trial is over.</p>
+<p>Normal Division B match rules apply. If the team performs a foul or the ball leaves the field, the trial is over and is counted with <strong>20s</strong>.</p>
 </li>
 <li>
 <p>No human interference is allowed during each trial.</p>
@@ -630,7 +640,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect3">
 <h4 id="_evaluation_2">Evaluation</h4>
 <div class="paragraph">
-<p>The exact algorithm for the evaluation will be published one month before the competition at latest.</p>
+<p>For each situation, the fastest time of each team is divided by the median over the fastest times per trial of all teams.
+These ten scores are summed up. Based on the result, teams are ranked from low to high.</p>
 </div>
 </div>
 </div>
@@ -648,7 +659,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>There will be five different situations in random order that teams have to handle. They are specified in the appendix <a href="#_scenarios_for_challenge_2">Scenarios for Challenge 2</a>. The situations include the positions of the opponent robots.
 The ball is touching the defenders dribbler.
 The attacker is placed in front of the ball, exactly opposite of the defender.
-The distance between the ball center and the attacking robot center must be 0.3 m.</p>
+The distance between the ball center and the attacking robot center must be 0.3 m.
+For each situation, the team has three trials, out of which the best counts.</p>
 </div>
 <div class="paragraph">
 <p>For each situation, the following procedure applies:</p>
@@ -664,6 +676,9 @@ The distance between the ball center and the attacking robot center must be 0.3 
 <li>
 <p>The attacker has <strong>30s</strong> to score a goal. Afterwards, the trial is over.</p>
 </li>
+<li>
+<p>The timer is stopped when a valid goal is scored.</p>
+</li>
 </ul>
 </div>
 </div>
@@ -675,7 +690,7 @@ The distance between the ball center and the attacking robot center must be 0.3 
 <div class="ulist">
 <ul>
 <li>
-<p>Normal Division B match rules apply. If the team performs a foul or the ball leaves the field, the trial is over.</p>
+<p>Normal Division B match rules apply. If the team performs a foul or the ball leaves the field, the trial is over and is counted with <strong>30s</strong>.</p>
 </li>
 <li>
 <p>No human interference is allowed during each trial.</p>
@@ -701,7 +716,8 @@ The distance between the ball center and the attacking robot center must be 0.3 
 <div class="sect3">
 <h4 id="_evaluation_3">Evaluation</h4>
 <div class="paragraph">
-<p>The exact algorithm for the evaluation will be published one month before the competition at latest.</p>
+<p>For each situation, the fastest time of each team is divided by the median over the fastest times per trial of all teams.
+These five scores are summed up. Based on the result, teams are ranked from low to high.</p>
 </div>
 </div>
 </div>
@@ -1178,7 +1194,7 @@ Description: Free kick from within the field with five opponents and a goalkeepe
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-05-20 14:53:12 UTC
+Last updated 2021-05-21 07:02:29 UTC
 </div>
 </div>
 </body>
