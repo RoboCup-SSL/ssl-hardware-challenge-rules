@@ -20,6 +20,27 @@ For all hardware challenges, the following rules apply:
 - Teams need to run an autoRef in their lab for rule checking and evaluation.
 - The challenges will be performed live, using a video stream. Teams need to provide a camera that covers the whole field.
 
+== General Rules and Procedure
+
+The general procedure for each team to perform all challenges is as follows:
+
+* There will be two members of OC, TC and EC that will act as the supervisors of the challenges.
+* The team has 2 hours to complete all four challenges.
+* The team can decide to use the remaining time of the current time slot in the second time slot between each challenge.
+* Challenges can not be repeated, nor span over both time slots.
+* The second time slot can also be used if there are technical issues that the team has no influence on (like with video streaming or with league software).
+* The supervisors will take note of the time that was not usable for the team and may allow the team to complete the remaining challenges on the second time slot, if there is no time left on the first one.
+* The team must share the full screen of the computer that is performing the challenge so that everyone can validate what the team is doing.
+* The team may not change any code or configuration during one challenge.
+* If the team uses their software to initialize the scenario, it is allowed to touch their computer for that. This must be done in an understandable way, so that viewers can verify what the team is doing.
+* The supervisors can disqualify a team after one warning, if they suspect that a team is actively manipulating their software during a challenge.
+* The team is free to change their software between the four challenges.
+* The team can take as much time as they want between challenges. The only limit is the 2h time slot. When the 2 hours are over, the current trial can be completed, but no new trials are allowed. All remaining challenges and trials are considered as failed.
+
+NOTE: Teams should make sure that they can prepare all scenarios within a short time, as this preparation time
+also counts towards their 2-hour time budget. So, moving robots to their target positions automatically is highly
+encouraged.
+
 == Evaluation
 
 For each challenge, teams are ranked in order of performance.
