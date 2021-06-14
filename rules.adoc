@@ -20,6 +20,19 @@ For all hardware challenges, the following rules apply:
 - Teams need to run an autoRef in their lab for rule checking and evaluation.
 - The challenges will be performed live, using a video stream. Teams need to provide a camera that covers the whole field.
 
+== Requirements
+
+The following requirements need to be met by the teams:
+
+* All software should ideally run on the same computer for easier validation and screen-shared in the video conference provided by the organizers.
+* A view on the field should be streamed either to the video conference directly, or on a streaming platform like Youtube.
+* Software to be installed on the team's computer:
+- https://github.com/RoboCup-SSL/ssl-game-controller[Ssl-game-controller]
+- https://github.com/TIGERs-Mannheim/AutoReferee[TIGERs autoRef]
+- https://github.com/RoboCup-SSL/ssl-hardware-challenge-tool[ssl-hardware-challenge-tool]
+- Optional: https://github.com/robotics-erlangen/autoref[ER-Force autoRef]
+- Optional: Log recording tools, see https://ssl.robocup.org/league-software/[League Software]
+
 == General Rules and Procedure
 
 The general procedure for each team to perform all challenges is as follows:
