@@ -1,5 +1,4 @@
-:source-highlighter: pygments
-:pygments-style: emacs
+:source-highlighter: highlightjs
 :icons: font
 
 = RoboCup Small Size League (SSL) Hardware Challenges 2021
@@ -164,11 +163,14 @@ The parkour will look like this:
 
 image::scenarios-challenge-3/scenario1.svg[Interactive,700,opts=interactive]
 
-Here are the positions encoded as JSON:
+.Here are the positions encoded as JSON:
+[%collapsible]
+====
 [source,json]
 ----
-{"ball":{"pos":[-1500,-1500,0.0]},"bots":[{"obj":{"pos":[-1500,1500,0]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-1500,900,0]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-1500,400,0]},"id":{"number":2,"color":"YELLOW"}},{"obj":{"pos":[-1500,-200,0]},"id":{"number":3,"color":"YELLOW"}},{"obj":{"pos":[-1500,-1000,0]},"id":{"number":4,"color":"YELLOW"}},{"obj":{"pos":[-1500,-1900,1.57]},"id":{"number":0,"color":"BLUE"}}]}
+include::scenarios-challenge-3/hwc3.json[]
 ----
+====
 
 The parkour is to be interpreted as follows:
 
@@ -216,6 +218,15 @@ Within a limited time, the team is asked to perform as many passes as possible. 
 - The team places all robots on the middle line and the ball on the center point.
 - A FORCE_START command will be issued and the timer will start.
 - After *5min* a HALT command will be issued and the challenge is over.
+
+.Here are the positions encoded as JSON:
+[%collapsible]
+====
+[source,json]
+----
+include::scenarios-challenge-4/hwc4.json[]
+----
+====
 
 ==== Rules
 

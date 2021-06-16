@@ -1,19 +1,44 @@
 === Scenario 1
 
+[source,json]
+----
+include::scenarios-challenge-2/hwc2s1.json[]
+----
+
 image::scenarios-challenge-2/scenario1.svg[Interactive,700,opts=interactive]
 
 === Scenario 2
+
+[source,json]
+----
+include::scenarios-challenge-2/hwc2s2.json[]
+----
 
 image::scenarios-challenge-2/scenario2.svg[Interactive,700,opts=interactive]
 
 === Scenario 3
 
+[source,json]
+----
+include::scenarios-challenge-2/hwc2s3.json[]
+----
+
 image::scenarios-challenge-2/scenario3.svg[Interactive,700,opts=interactive]
 
 === Scenario 4
 
+[source,json]
+----
+include::scenarios-challenge-2/hwc2s4.json[]
+----
+
 image::scenarios-challenge-2/scenario4.svg[Interactive,700,opts=interactive]
 
 === Scenario 5
+
+[source,json]
+----
+include::scenarios-challenge-2/hwc2s5.json[]
+----
 
 image::scenarios-challenge-2/scenario5.svg[Interactive,700,opts=interactive]
