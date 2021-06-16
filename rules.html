@@ -435,6 +435,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/github.min.css">
 </head>
 <body class="article">
 <div id="header">
@@ -859,14 +860,104 @@ These five scores are summed up. Based on the result, teams are ranked from low 
 <object type="image/svg+xml" data="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMTI3NS41OSA5OTIuMTMiPgogICAgPGRlZnM+CiAgICAgICAgPHN0eWxlPgogICAgICAgICAgICAuY2xzLTEsLmNscy00LC5jbHMtNXtmaWxsOm5vbmU7fS5jbHMtMntmaWxsOmdyZWVuO30uY2xzLTN7Y2xpcC1wYXRoOnVybCgjY2xpcC1wYXRoKTt9LmNscy00e3N0cm9rZTojZmYwO30uY2xzLTQsLmNscy01e3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS13aWR0aDoycHg7fS5jbHMtNXtzdHJva2U6I2ZmZjt9LmNscy02LC5jbHMtN3tpc29sYXRpb246aXNvbGF0ZTt9LmNscy03e2ZvbnQtc2l6ZToxNXB4O2ZpbGw6I2ZmZjtmb250LWZhbWlseTpBcmlhbE1ULAogICAgICAgICAgICBBcmlhbDt9LmNscy04e2NsaXAtcGF0aDp1cmwoI2NsaXAtcGF0aC0yKTt9LmNscy05e2ZpbGw6bGltZTt9LmNscy0xMHtmaWxsOiNmMGY7fS5jbHMtMTF7ZmlsbDojZmYwO30uY2xzLTEye2NsaXAtcGF0aDp1cmwoI2NsaXAtcGF0aC0zKTt9LmNscy0xM3tjbGlwLXBhdGg6dXJsKCNjbGlwLXBhdGgtNCk7fS5jbHMtMTR7Y2xpcC1wYXRoOnVybCgjY2xpcC1wYXRoLTUpO30uY2xzLTE1e2NsaXAtcGF0aDp1cmwoI2NsaXAtcGF0aC02KTt9LmNscy0xNntjbGlwLXBhdGg6dXJsKCNjbGlwLXBhdGgtNyk7fS5jbHMtMTd7ZmlsbDojMDAzN2ZmO30KICAgICAgICA8L3N0eWxlPgogICAgICAgIDxjbGlwUGF0aCBpZD0iY2xpcC1wYXRoIj4KICAgICAgICAgICAgPHJlY3QgY2xhc3M9ImNscy0xIiB4PSI1MTkuMTgiIHk9IjcuOTciIHdpZHRoPSIyMzYuMTciIGhlaWdodD0iNjMuMTciLz4KICAgICAgICA8L2NsaXBQYXRoPgogICAgICAgIDxjbGlwUGF0aCBpZD0iY2xpcC1wYXRoLTIiPgogICAgICAgICAgICA8cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjEwMzMuMjIiIHk9IjQ3My42NyIgd2lkdGg9IjYxLjE5IiBoZWlnaHQ9IjQ1LjM4Ii8+CiAgICAgICAgPC9jbGlwUGF0aD4KICAgICAgICA8Y2xpcFBhdGggaWQ9ImNsaXAtcGF0aC0zIj4KICAgICAgICAgICAgPHJlY3QgY2xhc3M9ImNscy0xIiB4PSI4NjAuMzUiIHk9IjQ3NC4xNSIgd2lkdGg9IjYxLjE5IiBoZWlnaHQ9IjQ1LjM4Ii8+CiAgICAgICAgPC9jbGlwUGF0aD4KICAgICAgICA8Y2xpcFBhdGggaWQ9ImNsaXAtcGF0aC00Ij4KICAgICAgICAgICAgPHJlY3QgY2xhc3M9ImNscy0xIiB4PSI3MTYuMjciIHk9IjQ3My44MyIgd2lkdGg9IjYxLjE5IiBoZWlnaHQ9IjQ1LjM4Ii8+CiAgICAgICAgPC9jbGlwUGF0aD4KICAgICAgICA8Y2xpcFBhdGggaWQ9ImNsaXAtcGF0aC01Ij4KICAgICAgICAgICAgPHJlY3QgY2xhc3M9ImNscy0xIiB4PSI1NDQuNCIgeT0iNDc0LjA1IiB3aWR0aD0iNjEuMTkiIGhlaWdodD0iNDUuMzgiLz4KICAgICAgICA8L2NsaXBQYXRoPgogICAgICAgIDxjbGlwUGF0aCBpZD0iY2xpcC1wYXRoLTYiPgogICAgICAgICAgICA8cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjMxMS40NCIgeT0iNDc0LjY5IiB3aWR0aD0iNjEuMTkiIGhlaWdodD0iNDUuMzgiLz4KICAgICAgICA8L2NsaXBQYXRoPgogICAgICAgIDxjbGlwUGF0aCBpZD0iY2xpcC1wYXRoLTciPgogICAgICAgICAgICA8cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjYyLjY1IiB5PSI0NjcuNDgiIHdpZHRoPSI0NS4zOCIgaGVpZ2h0PSI2MS4xOSIvPgogICAgICAgIDwvY2xpcFBhdGg+CiAgICA8L2RlZnM+CiAgICA8dGl0bGU+Um9ib0N1cENoYWxsZW5nZXM8L3RpdGxlPgogICAgPGcgaWQ9IkxheWVyXzciIGRhdGEtbmFtZT0iTGF5ZXIgNyI+CiAgICAgICAgPGcgaWQ9IkZpZWxkIj4KICAgICAgICAgICAgPHJlY3QgaWQ9InJlY3QxMi02IiBjbGFzcz0iY2xzLTIiIHg9IjAuMTkiIHk9IjAuMDgiIHdpZHRoPSIxMjc1LjU5IiBoZWlnaHQ9Ijk5Mi4xMyIvPgogICAgICAgICAgICA8ZyBjbGFzcz0iY2xzLTMiPgogICAgICAgICAgICAgICAgPHJlY3QgaWQ9InJlY3QxMC0zIiBjbGFzcz0iY2xzLTQiIHg9IjUzOC42NCIgeT0iMjcuNzEiIHdpZHRoPSIxOTguNDMiIGhlaWdodD0iODUuMDQiLz4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8cmVjdCBpZD0icmVjdDEyIiBjbGFzcz0iY2xzLTUiIHg9IjcxLjA2IiB5PSI3MC45NSIgd2lkdGg9IjExMzMuODYiIGhlaWdodD0iODUwLjM5Ii8+CiAgICAgICAgICAgIDxyZWN0IGlkPSJyZWN0MTAiIGNsYXNzPSJjbHMtNSIgeD0iMzU0LjQzIiB5PSI3MC45NSIgd2lkdGg9IjU2Ni45MyIgaGVpZ2h0PSIyMjYuNzciLz4KICAgICAgICAgICAgPHBhdGggaWQ9InBhdGg4NzMiIGNsYXNzPSJjbHMtNSIgZD0iTTQ5Ni4zOCw5MjEuMzlhMTQxLjczLDE0MS43MywwLDEsMSwyODMuNDYtLjA5Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxnIGlkPSJ0ZXh0MTU2MCIgY2xhc3M9ImNscy02Ij4KICAgICAgICAgICAgPHRleHQgY2xhc3M9ImNscy03IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDcxLjE5IDU2Ny41OCkiPigtMTUwMCwgMTUwMCk8L3RleHQ+CiAgICAgICAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTA3MS4xOSA1ODYuMzMpIj4wwro8L3RleHQ+CiAgICAgICAgPC9nPgogICAgICAgIDxnIGlkPSJnMTU1NiI+CiAgICAgICAgICAgIDxnIGNsYXNzPSJjbHMtOCI+CiAgICAgICAgICAgICAgICA8Y2lyY2xlIGlkPSJwYXRoMTA0NS05LTYiIGN4PSIxMDYzLjk1IiBjeT0iNTAyLjQ1IiByPSIyNS41MSIvPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNS03LTg4IiBjbGFzcz0iY2xzLTkiIGN4PSIxMDc5LjUzIiBjeT0iNTEyLjI1IiByPSI1LjY5Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtMy00MyIgY2xhc3M9ImNscy0xMCIgY3g9IjEwNDguMzgiIGN5PSI1MTIuMjUiIHI9IjUuNjkiLz4KICAgICAgICAgICAgPGNpcmNsZSBpZD0icGF0aDkwMy01Ni0yLTYtMSIgY2xhc3M9ImNscy0xMSIgY3g9IjEwNjMuOTUiIGN5PSI1MDIuMyIgcj0iNy4xMSIvPgogICAgICAgICAgICA8Y2lyY2xlIGlkPSJwYXRoOTAzLTU2LTktMTItNDkiIGNsYXNzPSJjbHMtMTAiIGN4PSIxMDczLjkxIiBjeT0iNDg2LjczIiByPSI1LjY5Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtOS0xLTktMiIgY2xhc3M9ImNscy05IiBjeD0iMTA1NCIgY3k9IjQ4Ni43MyIgcj0iNS42OSIvPgogICAgICAgIDwvZz4KICAgICAgICA8ZyBpZD0idGV4dDE1NjAtMiIgZGF0YS1uYW1lPSJ0ZXh0MTU2MCIgY2xhc3M9ImNscy02Ij4KICAgICAgICAgICAgPHRleHQgY2xhc3M9ImNscy03IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5MDIuNDkgNTYzLjg5KSI+KC0xNTAwLCA5MDApPC90ZXh0PgogICAgICAgICAgICA8dGV4dCBjbGFzcz0iY2xzLTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDkwMi40OSA1ODIuNjQpIj4wwro8L3RleHQ+CiAgICAgICAgPC9nPgogICAgICAgIDxnIGlkPSJnMTU1Ni0yIiBkYXRhLW5hbWU9ImcxNTU2Ij4KICAgICAgICAgICAgPGcgY2xhc3M9ImNscy0xMiI+CiAgICAgICAgICAgICAgICA8Y2lyY2xlIGlkPSJwYXRoMTA0NS05LTYtMiIgZGF0YS1uYW1lPSJwYXRoMTA0NS05LTYiIGN4PSI4OTEuMDgiIGN5PSI1MDIuOTIiIHI9IjI1LjUxIi8+CiAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPGNpcmNsZSBpZD0icGF0aDkwMy01LTctODgtMiIgZGF0YS1uYW1lPSJwYXRoOTAzLTUtNy04OCIgY2xhc3M9ImNscy05IiBjeD0iOTA2LjY2IiBjeT0iNTEyLjczIiByPSI1LjY5Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtMy00My0yIiBkYXRhLW5hbWU9InBhdGg5MDMtNTYtMy00MyIgY2xhc3M9ImNscy0xMCIgY3g9Ijg3NS41MSIgY3k9IjUxMi43MyIgcj0iNS42OSIvPgogICAgICAgICAgICA8Y2lyY2xlIGlkPSJwYXRoOTAzLTU2LTItNi0xLTIiIGRhdGEtbmFtZT0icGF0aDkwMy01Ni0yLTYtMSIgY2xhc3M9ImNscy0xMSIgY3g9Ijg5MS4wOCIgY3k9IjUwMi43OCIKICAgICAgICAgICAgICAgICAgICByPSI3LjExIi8+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtOS0xMi00OS0yIiBkYXRhLW5hbWU9InBhdGg5MDMtNTYtOS0xMi00OSIgY2xhc3M9ImNscy0xMCIgY3g9IjkwMS4wMyIgY3k9IjQ4Ny4yIgogICAgICAgICAgICAgICAgICAgIHI9IjUuNjkiLz4KICAgICAgICAgICAgPGNpcmNsZSBpZD0icGF0aDkwMy01Ni05LTEtOS0yLTIiIGRhdGEtbmFtZT0icGF0aDkwMy01Ni05LTEtOS0yIiBjbGFzcz0iY2xzLTkiIGN4PSI4ODEuMTMiIGN5PSI0ODcuMiIKICAgICAgICAgICAgICAgICAgICByPSI1LjY5Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxnIGlkPSJ0ZXh0MTU2MC0zIiBkYXRhLW5hbWU9InRleHQxNTYwIiBjbGFzcz0iY2xzLTYiPgogICAgICAgICAgICA8dGV4dCBjbGFzcz0iY2xzLTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDc2MC40OSA1NjEuNDgpIj4oLTE1MDAgNDAwKTwvdGV4dD4KICAgICAgICAgICAgPHRleHQgY2xhc3M9ImNscy03IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3NjAuNDkgNTgwLjIzKSI+MMK6PC90ZXh0PgogICAgICAgIDwvZz4KICAgICAgICA8ZyBpZD0iZzE1NTYtMyIgZGF0YS1uYW1lPSJnMTU1NiI+CiAgICAgICAgICAgIDxnIGNsYXNzPSJjbHMtMTMiPgogICAgICAgICAgICAgICAgPGNpcmNsZSBpZD0icGF0aDEwNDUtOS02LTMiIGRhdGEtbmFtZT0icGF0aDEwNDUtOS02IiBjeD0iNzQ3IiBjeT0iNTAyLjYiIHI9IjI1LjUxIi8+CiAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPGNpcmNsZSBpZD0icGF0aDkwMy01LTctODgtMyIgZGF0YS1uYW1lPSJwYXRoOTAzLTUtNy04OCIgY2xhc3M9ImNscy05IiBjeD0iNzYyLjU4IiBjeT0iNTEyLjQxIiByPSI1LjY5Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtMy00My0zIiBkYXRhLW5hbWU9InBhdGg5MDMtNTYtMy00MyIgY2xhc3M9ImNscy0xMCIgY3g9IjczMS40MyIgY3k9IjUxMi40MSIgcj0iNS42OSIvPgogICAgICAgICAgICA8Y2lyY2xlIGlkPSJwYXRoOTAzLTU2LTItNi0xLTMiIGRhdGEtbmFtZT0icGF0aDkwMy01Ni0yLTYtMSIgY2xhc3M9ImNscy0xMSIgY3g9Ijc0NyIgY3k9IjUwMi40NiIgcj0iNy4xMSIvPgogICAgICAgICAgICA8Y2lyY2xlIGlkPSJwYXRoOTAzLTU2LTktMTItNDktMyIgZGF0YS1uYW1lPSJwYXRoOTAzLTU2LTktMTItNDkiIGNsYXNzPSJjbHMtMTAiIGN4PSI3NTYuOTUiIGN5PSI0ODYuODkiCiAgICAgICAgICAgICAgICAgICAgcj0iNS42OSIvPgogICAgICAgICAgICA8Y2lyY2xlIGlkPSJwYXRoOTAzLTU2LTktMS05LTItMyIgZGF0YS1uYW1lPSJwYXRoOTAzLTU2LTktMS05LTIiIGNsYXNzPSJjbHMtOSIgY3g9IjczNy4wNSIgY3k9IjQ4Ni44OSIKICAgICAgICAgICAgICAgICAgICByPSI1LjY5Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxnIGlkPSJ0ZXh0MTU2MC00IiBkYXRhLW5hbWU9InRleHQxNTYwIiBjbGFzcz0iY2xzLTYiPgogICAgICAgICAgICA8dGV4dCBjbGFzcz0iY2xzLTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU4Ni4xMiA1NjQuMikiPigtMTUwMCAtMjAwKTwvdGV4dD4KICAgICAgICAgICAgPHRleHQgY2xhc3M9ImNscy03IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1ODYuMTIgNTgyLjk1KSI+MMK6PC90ZXh0PgogICAgICAgIDwvZz4KICAgICAgICA8ZyBpZD0iZzE1NTYtNCIgZGF0YS1uYW1lPSJnMTU1NiI+CiAgICAgICAgICAgIDxnIGNsYXNzPSJjbHMtMTQiPgogICAgICAgICAgICAgICAgPGNpcmNsZSBpZD0icGF0aDEwNDUtOS02LTQiIGRhdGEtbmFtZT0icGF0aDEwNDUtOS02IiBjeD0iNTc1LjEzIiBjeT0iNTAyLjgyIiByPSIyNS41MSIvPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNS03LTg4LTQiIGRhdGEtbmFtZT0icGF0aDkwMy01LTctODgiIGNsYXNzPSJjbHMtOSIgY3g9IjU5MC43IiBjeT0iNTEyLjYzIiByPSI1LjY5Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtMy00My00IiBkYXRhLW5hbWU9InBhdGg5MDMtNTYtMy00MyIgY2xhc3M9ImNscy0xMCIgY3g9IjU1OS41NiIgY3k9IjUxMi42MyIgcj0iNS42OSIvPgogICAgICAgICAgICA8Y2lyY2xlIGlkPSJwYXRoOTAzLTU2LTItNi0xLTQiIGRhdGEtbmFtZT0icGF0aDkwMy01Ni0yLTYtMSIgY2xhc3M9ImNscy0xMSIgY3g9IjU3NS4xMyIgY3k9IjUwMi42OCIKICAgICAgICAgICAgICAgICAgICByPSI3LjExIi8+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtOS0xMi00OS00IiBkYXRhLW5hbWU9InBhdGg5MDMtNTYtOS0xMi00OSIgY2xhc3M9ImNscy0xMCIgY3g9IjU4NS4wOCIgY3k9IjQ4Ny4xIgogICAgICAgICAgICAgICAgICAgIHI9IjUuNjkiLz4KICAgICAgICAgICAgPGNpcmNsZSBpZD0icGF0aDkwMy01Ni05LTEtOS0yLTQiIGRhdGEtbmFtZT0icGF0aDkwMy01Ni05LTEtOS0yIiBjbGFzcz0iY2xzLTkiIGN4PSI1NjUuMTgiIGN5PSI0ODcuMSIKICAgICAgICAgICAgICAgICAgICByPSI1LjY5Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxnIGlkPSJ0ZXh0MTU2MC01IiBkYXRhLW5hbWU9InRleHQxNTYwIiBjbGFzcz0iY2xzLTYiPgogICAgICAgICAgICA8dGV4dCBjbGFzcz0iY2xzLTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM0Ni45MiA1NzEuMSkiPigtMTUwMCwgLTEwMDApPC90ZXh0PgogICAgICAgICAgICA8dGV4dCBjbGFzcz0iY2xzLTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM0Ni45MiA1ODkuODUpIj4wwro8L3RleHQ+CiAgICAgICAgPC9nPgogICAgICAgIDxnIGlkPSJnMTU1Ni01IiBkYXRhLW5hbWU9ImcxNTU2Ij4KICAgICAgICAgICAgPGcgY2xhc3M9ImNscy0xNSI+CiAgICAgICAgICAgICAgICA8Y2lyY2xlIGlkPSJwYXRoMTA0NS05LTYtNSIgZGF0YS1uYW1lPSJwYXRoMTA0NS05LTYiIGN4PSIzNDIuMTciIGN5PSI1MDMuNDYiIHI9IjI1LjUxIi8+CiAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPGNpcmNsZSBpZD0icGF0aDkwMy01LTctODgtNSIgZGF0YS1uYW1lPSJwYXRoOTAzLTUtNy04OCIgY2xhc3M9ImNscy05IiBjeD0iMzU3Ljc1IiBjeT0iNTEzLjI3IiByPSI1LjY5Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtMy00My01IiBkYXRhLW5hbWU9InBhdGg5MDMtNTYtMy00MyIgY2xhc3M9ImNscy0xMCIgY3g9IjMyNi42IiBjeT0iNTEzLjI3IiByPSI1LjY5Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtMi02LTEtNSIgZGF0YS1uYW1lPSJwYXRoOTAzLTU2LTItNi0xIiBjbGFzcz0iY2xzLTExIiBjeD0iMzQyLjE3IiBjeT0iNTAzLjMyIgogICAgICAgICAgICAgICAgICAgIHI9IjcuMTEiLz4KICAgICAgICAgICAgPGNpcmNsZSBpZD0icGF0aDkwMy01Ni05LTEyLTQ5LTUiIGRhdGEtbmFtZT0icGF0aDkwMy01Ni05LTEyLTQ5IiBjbGFzcz0iY2xzLTEwIiBjeD0iMzUyLjEzIiBjeT0iNDg3Ljc1IgogICAgICAgICAgICAgICAgICAgIHI9IjUuNjkiLz4KICAgICAgICAgICAgPGNpcmNsZSBpZD0icGF0aDkwMy01Ni05LTEtOS0yLTUiIGRhdGEtbmFtZT0icGF0aDkwMy01Ni05LTEtOS0yIiBjbGFzcz0iY2xzLTkiIGN4PSIzMzIuMjIiIGN5PSI0ODcuNzUiCiAgICAgICAgICAgICAgICAgICAgcj0iNS42OSIvPgogICAgICAgIDwvZz4KICAgICAgICA8ZyBpZD0idGV4dDE1NjAtNiIgZGF0YS1uYW1lPSJ0ZXh0MTU2MCIgY2xhc3M9ImNscy02Ij4KICAgICAgICAgICAgPHRleHQgY2xhc3M9ImNscy03IiB0cmFuc2Zvcm09Im1hdHJpeCgxLCAtMC4wMSwgMC4wMSwgMSwgOTAuMTYsIDU3Mi4xNCkiPigtMTUwMCwgLTE5MDApPC90ZXh0PgogICAgICAgICAgICA8dGV4dCBjbGFzcz0iY2xzLTciIHRyYW5zZm9ybT0ibWF0cml4KDEsIC0wLjAxLCAwLjAxLCAxLCA5MC4zMiwgNTkwLjg5KSI+OTDCujwvdGV4dD4KICAgICAgICAgICAgPHRleHQgY2xhc3M9ImNscy02Ij48L3RleHQ+CiAgICAgICAgPC9nPgogICAgICAgIDxnIGlkPSJnMTU1Ni02IiBkYXRhLW5hbWU9ImcxNTU2Ij4KICAgICAgICAgICAgPGcgY2xhc3M9ImNscy0xNiI+CiAgICAgICAgICAgICAgICA8Y2lyY2xlIGlkPSJwYXRoMTA0NS05LTYtNiIgZGF0YS1uYW1lPSJwYXRoMTA0NS05LTYiIGN4PSI5MS40MyIgY3k9IjQ5Ny45NCIgcj0iMjUuNTEiLz4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8Y2lyY2xlIGlkPSJwYXRoOTAzLTUtNy04OC02IiBkYXRhLW5hbWU9InBhdGg5MDMtNS03LTg4IiBjbGFzcz0iY2xzLTkiIGN4PSIxMDEuMjMiIGN5PSI0ODIuMzYiIHI9IjUuNjkiLz4KICAgICAgICAgICAgPGNpcmNsZSBpZD0icGF0aDkwMy01Ni0zLTQzLTYiIGRhdGEtbmFtZT0icGF0aDkwMy01Ni0zLTQzIiBjbGFzcz0iY2xzLTEwIiBjeD0iMTAxLjI0IiBjeT0iNTEzLjUxIiByPSI1LjY5Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtMi02LTEtNiIgZGF0YS1uYW1lPSJwYXRoOTAzLTU2LTItNi0xIiBjbGFzcz0iY2xzLTE3IiBjeD0iOTEuMjgiIGN5PSI0OTcuOTQiCiAgICAgICAgICAgICAgICAgICAgcj0iNy4xMSIvPgogICAgICAgICAgICA8Y2lyY2xlIGlkPSJwYXRoOTAzLTU2LTktMTItNDktNiIgZGF0YS1uYW1lPSJwYXRoOTAzLTU2LTktMTItNDkiIGNsYXNzPSJjbHMtMTAiIGN4PSI3NS43MSIgY3k9IjQ4Ny45OSIKICAgICAgICAgICAgICAgICAgICByPSI1LjY5Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtOS0xLTktMi02IiBkYXRhLW5hbWU9InBhdGg5MDMtNTYtOS0xLTktMiIgY2xhc3M9ImNscy05IiBjeD0iNzUuNzEiIGN5PSI1MDcuODkiCiAgICAgICAgICAgICAgICAgICAgcj0iNS42OSIvPgogICAgICAgIDwvZz4KICAgICAgICA8aW1hZ2UgaWQ9ImltYWdlMTcwIiBjbGFzcz0iY2xzLTYiIHdpZHRoPSI1MyIgaGVpZ2h0PSI1MyIKICAgICAgICAgICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjE3LjUxIDQ5OC4wNCkgcm90YXRlKDEzNC45OCkgc2NhbGUoMC4yNCkiCiAgICAgICAgICAgICAgIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBRFVBQUFBMUNBWUFBQURoNXFOd0FBQUFDWEJJV1hNQUFBc1NBQUFMRWdIUzNYNzhBQUFEeWtsRVFWUm9ROTNhejR0VlpSekg4ZGR6ZEpxeHhFblVmaXdpQ0hSMDA3SWN6SUVXNGFLV2laRXRNaVJsTktNZ2d3aUNGa1pZVUVvNk54ME1SS2hHb2swdDJwbUsrZ2NvV290K29KbEovaXdkN3R4N254WjNMbk5Iejcybk96LzBubm52em5QZXo0RVB6M1BPZWM3elBTSEdhTXJZRXVZWjFpZFlMdW9STE1FaTNJZDV1SVovY1ZIMEUwN2poTEpEQnVQMXhoZHVqVERwVVAxaHZvbzFvclhveGF5c0xpbVVCTWRFQnhSOVpWKzhrdFdoR1JNUDFSOGVVN1lWTDZNencyNkZZZXhUc2QyZStFdVduRWJyb2ZyRGZDWGJCT3N4TzB1ZkJDVVVGTDNiNnNpMUZtcGpXQ1BhZ1FleTFDbmtBbDVUaUVOWllvMy9GMnBkNkhLUEQ3RWxTNTFHOW1PalFyeVJKV2FIMmhBV2lyNFRQTkZjdkNNY1UvYWN2ZkZTTTZsNXFFM2hFU1UvWUdsajZZNXpTc1VxZStMWlJrTGpVSnZEQWlNT1kxbTZjRmY1V2VJcHUrTmZhU2VUdEVadmhqbUt2dGVlZ1dDeGltK3RDMTFwSjlORDNmQnBtOXhEemVqVjZlTzBFN2RQditwais4czB1UzBKVmh1SUI4YzFqUXZWSCtZck8rM092b2NteXdWRlMrdGYwT09uWDhrMitRb0VEK3J3Zm4zRDJFaFYxM0puVE8vU1o3b1lrVmhpZC95VitwRXFlMXMrQTBHSDZLM2FRWFdrcXZmU0gwaDlST2FFWVVVUDJ4ZXZWRWVxN0FYNURnUmRPcXhtYlBxOTJFVE9EOEZMRU9LcnV2RzNpWDJ4dGhzbG5SWWtnajR6SXhETU5teEZJbm95eTh3VlFXK2l2VDRySmsvUWsyQnhscGNyb2lXSi9DMkxzbGlVWUc2V2xUUG1KWmlUWmVXTWV4UGN6TEp5eG8wRS8yUlpPZU5hZ3RUTml4eHpNUm10UHN3a3ppU3E1WlNaUTZpR09wSGw1WXFLNDRteVE2b1ZocGxBU2RtUnhHQzhMamlXWmVlQzZJakJlRDBaUFRpUW9lZURVTTFSRFRYTDE2b1Z2RHh6RTBQVVF1MktsMFZmTk9tUUJ3WVY0bFhxdDhpQ0R6RFNxRWViTTZMc285ckJXS2hDL0IyZnAvVm9lNEpkOXNiZmFvZmp0NTA3dllQenQvWnBjLzRVdlZmZk1EN1VqbmdOcjhzVHdhYmF2VlRqOXZwVUlRNkpCbTVyYjBlaW5RYmlON2MycHhmZFJyeEJtNytRbzZPNnh2YlA2MmxjODkwUXV2RWpIazhYN2lvbmxmVTFxdEtuanhRVTRsVVZ6K0pVUStmdWNGSmlWYlBmRGhxSGdqM3hyTEtWMm1VcVJrZk5zdEx1ZUs2WjFqd1U3STJYZEhvYU83TFVhV2EvdVo2eEsxN09FclAvZUtsblkzaGV0Qk1QWmFsVHlIbkI1clNuWENPeVI2cWVnWGhRMGJMUllOTzlwQ3JpRTUyV3RoS0lWa2VxbnZYaFViTnRGYjFpYWd0Mk56R0k3YU5MdDVhWmVLZ2E2OEw5T3F3V3JNVUtFNnNibDBSSFJyK0hobTVkSWJUSzVFUFZzeW5NVmRZbldpN29FZlZnb2VyV2RqZXVxdTR6WGhSRy82R3RPSzdEWVovRktkdC8vQTlJbGovMndjZ0lIZ0FBQUFCSlJVNUVya0pnZ2c9PSIvPgogICAgPC9nPgo8L3N2Zz4=" width="700"><span class="alt">Interactive</span></object>
 </div>
 </div>
-<div class="paragraph">
-<p>Here are the positions encoded as JSON:</p>
-</div>
+<details>
+<summary class="title">Here are the positions encoded as JSON:</summary>
+<div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="json">{"ball":{"pos":[-1500,-1500,0.0]},"bots":[{"obj":{"pos":[-1500,1500,0]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-1500,900,0]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-1500,400,0]},"id":{"number":2,"color":"YELLOW"}},{"obj":{"pos":[-1500,-200,0]},"id":{"number":3,"color":"YELLOW"}},{"obj":{"pos":[-1500,-1000,0]},"id":{"number":4,"color":"YELLOW"}},{"obj":{"pos":[-1500,-1900,1.57]},"id":{"number":0,"color":"BLUE"}}]}</code></pre>
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "ball": {
+    "pos": [
+      -1500,
+      -1500,
+      0.0
+    ]
+  },
+  "bots": [
+    {
+      "obj": {
+        "pos": [
+          -1500,
+          1500,
+          0
+        ]
+      },
+      "id": {
+        "number": 0,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -1500,
+          900,
+          0
+        ]
+      },
+      "id": {
+        "number": 1,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -1500,
+          400,
+          0
+        ]
+      },
+      "id": {
+        "number": 2,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -1500,
+          -200,
+          0
+        ]
+      },
+      "id": {
+        "number": 3,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -1500,
+          -1000,
+          0
+        ]
+      },
+      "id": {
+        "number": 4,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -1500,
+          -1900,
+          1.57
+        ]
+      },
+      "id": {
+        "number": 0,
+        "color": "BLUE"
+      }
+    }
+  ]
+}</code></pre>
 </div>
 </div>
+</div>
+</details>
 <div class="paragraph">
 <p>The parkour is to be interpreted as follows:</p>
 </div>
@@ -973,6 +1064,25 @@ These five scores are summed up. Based on the result, teams are ranked from low 
 </li>
 </ul>
 </div>
+<details>
+<summary class="title">Here are the positions encoded as JSON:</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "ball": {
+    "pos": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "bots": []
+}</code></pre>
+</div>
+</div>
+</div>
+</details>
 </div>
 <div class="sect3">
 <h4 id="_rules_4">Rules</h4>
@@ -1077,7 +1187,56 @@ Description: Free kick far from the goal with two defenders and a goalkeeper.<br
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="json">{"ball":{"pos":[-200,-1800,0]},"bots":[{"obj":{"pos":[-2900,0,-0.785398]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-2000,-750,0]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-2000,-550,0]},"id":{"number":2,"color":"YELLOW"}}]}</code></pre>
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "ball": {
+    "pos": [
+      -200,
+      -1800,
+      0
+    ]
+  },
+  "bots": [
+    {
+      "obj": {
+        "pos": [
+          -2900,
+          0,
+          -0.785398
+        ]
+      },
+      "id": {
+        "number": 0,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2000,
+          -750,
+          0
+        ]
+      },
+      "id": {
+        "number": 1,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2000,
+          -550,
+          0
+        ]
+      },
+      "id": {
+        "number": 2,
+        "color": "YELLOW"
+      }
+    }
+  ]
+}</code></pre>
 </div>
 </div>
 <div class="imageblock">
@@ -1095,7 +1254,56 @@ Description: Free kick on the middle line with two defenders and a goalkeeper.<b
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="json">{"ball":{"pos":[-900,0,0]},"bots":[{"obj":{"pos":[-2900,175,0.785398]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-2000,-175,0]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-1500,0,0]},"id":{"number":2,"color":"YELLOW"}}]}</code></pre>
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "ball": {
+    "pos": [
+      -900,
+      0,
+      0
+    ]
+  },
+  "bots": [
+    {
+      "obj": {
+        "pos": [
+          -2900,
+          175,
+          0.785398
+        ]
+      },
+      "id": {
+        "number": 0,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2000,
+          -175,
+          0
+        ]
+      },
+      "id": {
+        "number": 1,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -1500,
+          0,
+          0
+        ]
+      },
+      "id": {
+        "number": 2,
+        "color": "YELLOW"
+      }
+    }
+  ]
+}</code></pre>
 </div>
 </div>
 <div class="imageblock">
@@ -1113,7 +1321,69 @@ Description: Free kick from the center of the field with three opponents and a g
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="json">{"ball":{"pos":[-200,0,0]},"bots":[{"obj":{"pos":[-2900,0,0]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-2000,500,0]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-2000,-500,0]},"id":{"number":2,"color":"YELLOW"}},{"obj":{"pos":[-1000,0,0]},"id":{"number":3,"color":"YELLOW"}}]}</code></pre>
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "ball": {
+    "pos": [
+      -200,
+      0,
+      0
+    ]
+  },
+  "bots": [
+    {
+      "obj": {
+        "pos": [
+          -2900,
+          0,
+          0
+        ]
+      },
+      "id": {
+        "number": 0,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2000,
+          500,
+          0
+        ]
+      },
+      "id": {
+        "number": 1,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2000,
+          -500,
+          0
+        ]
+      },
+      "id": {
+        "number": 2,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -1000,
+          0,
+          0
+        ]
+      },
+      "id": {
+        "number": 3,
+        "color": "YELLOW"
+      }
+    }
+  ]
+}</code></pre>
 </div>
 </div>
 <div class="imageblock">
@@ -1131,7 +1401,69 @@ Description: Free kick from the middle line with three opponents and a goalkeepe
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="json">{"ball":{"pos":[-1350,0,0]},"bots":[{"obj":{"pos":[-2900,0,0]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-1950,500,0]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-1950,0,0]},"id":{"number":2,"color":"YELLOW"}},{"obj":{"pos":[-1950,-500,0]},"id":{"number":3,"color":"YELLOW"}}]}</code></pre>
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "ball": {
+    "pos": [
+      -1350,
+      0,
+      0
+    ]
+  },
+  "bots": [
+    {
+      "obj": {
+        "pos": [
+          -2900,
+          0,
+          0
+        ]
+      },
+      "id": {
+        "number": 0,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -1950,
+          500,
+          0
+        ]
+      },
+      "id": {
+        "number": 1,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -1950,
+          0,
+          0
+        ]
+      },
+      "id": {
+        "number": 2,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -1950,
+          -500,
+          0
+        ]
+      },
+      "id": {
+        "number": 3,
+        "color": "YELLOW"
+      }
+    }
+  ]
+}</code></pre>
 </div>
 </div>
 <div class="imageblock">
@@ -1149,7 +1481,82 @@ Description: Free kick from the top-left part of the field with 4 opponents and 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="json">{"ball":{"pos":[-2850,1750,0]},"bots":[{"obj":{"pos":[-2900,-200,-0.785398]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-2850,1100,1.5708]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-2000,500,0]},"id":{"number":2,"color":"YELLOW"}},{"obj":{"pos":[-2000,0,0]},"id":{"number":3,"color":"YELLOW"}},{"obj":{"pos":[-1450,1750,3.14]},"id":{"number":4,"color":"YELLOW"}}]}</code></pre>
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "ball": {
+    "pos": [
+      -2850,
+      1750,
+      0
+    ]
+  },
+  "bots": [
+    {
+      "obj": {
+        "pos": [
+          -2900,
+          -200,
+          -0.785398
+        ]
+      },
+      "id": {
+        "number": 0,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2850,
+          1100,
+          1.5708
+        ]
+      },
+      "id": {
+        "number": 1,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2000,
+          500,
+          0
+        ]
+      },
+      "id": {
+        "number": 2,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2000,
+          0,
+          0
+        ]
+      },
+      "id": {
+        "number": 3,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -1450,
+          1750,
+          3.14
+        ]
+      },
+      "id": {
+        "number": 4,
+        "color": "YELLOW"
+      }
+    }
+  ]
+}</code></pre>
 </div>
 </div>
 <div class="imageblock">
@@ -1167,7 +1574,82 @@ Description: Free kick from the bottom-right part of the field with four opponen
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="json">{"ball":{"pos":[-950,-1550,0]},"bots":[{"obj":{"pos":[-2900,0,0]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-2000,950,0.785398]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-2400,1250,0.785398]},"id":{"number":2,"color":"YELLOW"}},{"obj":{"pos":[-2000,360,-0.785398]},"id":{"number":3,"color":"YELLOW"}},{"obj":{"pos":[-1450,-1210,0]},"id":{"number":4,"color":"YELLOW"}}]}</code></pre>
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "ball": {
+    "pos": [
+      -950,
+      -1550,
+      0
+    ]
+  },
+  "bots": [
+    {
+      "obj": {
+        "pos": [
+          -2900,
+          0,
+          0
+        ]
+      },
+      "id": {
+        "number": 0,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2000,
+          950,
+          0.785398
+        ]
+      },
+      "id": {
+        "number": 1,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2400,
+          1250,
+          0.785398
+        ]
+      },
+      "id": {
+        "number": 2,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2000,
+          360,
+          -0.785398
+        ]
+      },
+      "id": {
+        "number": 3,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -1450,
+          -1210,
+          0
+        ]
+      },
+      "id": {
+        "number": 4,
+        "color": "YELLOW"
+      }
+    }
+  ]
+}</code></pre>
 </div>
 </div>
 <div class="imageblock">
@@ -1185,7 +1667,82 @@ Description: Free kick from the bottom-left part of the field with four opponent
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="json">{"ball":{"pos":[-2800,-1800,0]},"bots":[{"obj":{"pos":[-2910,-300,-1.571]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-2600,1200,1.571]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-1700,-350,0]},"id":{"number":2,"color":"YELLOW"}},{"obj":{"pos":[-2300,-1300,-2.356]},"id":{"number":3,"color":"YELLOW"}},{"obj":{"pos":[-2000,300,0]},"id":{"number":4,"color":"YELLOW"}}]}</code></pre>
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "ball": {
+    "pos": [
+      -2800,
+      -1800,
+      0
+    ]
+  },
+  "bots": [
+    {
+      "obj": {
+        "pos": [
+          -2910,
+          -300,
+          -1.571
+        ]
+      },
+      "id": {
+        "number": 0,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2600,
+          1200,
+          1.571
+        ]
+      },
+      "id": {
+        "number": 1,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -1700,
+          -350,
+          0
+        ]
+      },
+      "id": {
+        "number": 2,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2300,
+          -1300,
+          -2.356
+        ]
+      },
+      "id": {
+        "number": 3,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2000,
+          300,
+          0
+        ]
+      },
+      "id": {
+        "number": 4,
+        "color": "YELLOW"
+      }
+    }
+  ]
+}</code></pre>
 </div>
 </div>
 <div class="imageblock">
@@ -1203,7 +1760,95 @@ Description: Free kick from the top-right corner with five opponents and a goalk
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="json">{"ball":{"pos":[-200,1800,0]},"bots":[{"obj":{"pos":[-2900,100,0]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-2250,1200,0.785]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-2050,800,0]},"id":{"number":2,"color":"YELLOW"}},{"obj":{"pos":[-2050,400,0]},"id":{"number":3,"color":"YELLOW"}},{"obj":{"pos":[-2050,-400,0]},"id":{"number":4,"color":"YELLOW"}},{"obj":{"pos":[-2050,-800,0]},"id":{"number":5,"color":"YELLOW"}}]}</code></pre>
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "ball": {
+    "pos": [
+      -200,
+      1800,
+      0
+    ]
+  },
+  "bots": [
+    {
+      "obj": {
+        "pos": [
+          -2900,
+          100,
+          0
+        ]
+      },
+      "id": {
+        "number": 0,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2250,
+          1200,
+          0.785
+        ]
+      },
+      "id": {
+        "number": 1,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2050,
+          800,
+          0
+        ]
+      },
+      "id": {
+        "number": 2,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2050,
+          400,
+          0
+        ]
+      },
+      "id": {
+        "number": 3,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2050,
+          -400,
+          0
+        ]
+      },
+      "id": {
+        "number": 4,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2050,
+          -800,
+          0
+        ]
+      },
+      "id": {
+        "number": 5,
+        "color": "YELLOW"
+      }
+    }
+  ]
+}</code></pre>
 </div>
 </div>
 <div class="imageblock">
@@ -1221,7 +1866,95 @@ Description: Free kick from the bottom-left part of the field with five opponent
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="json">{"ball":{"pos":[-2800,-1750,0]},"bots":[{"obj":{"pos":[-2910,-300,-1.571]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-2050,1050,0]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-800,1000,-0.785]},"id":{"number":2,"color":"YELLOW"}},{"obj":{"pos":[-1350,350,0]},"id":{"number":3,"color":"YELLOW"}},{"obj":{"pos":[-1550,-600,0]},"id":{"number":4,"color":"YELLOW"}},{"obj":{"pos":[-2200,-1200,0.785]},"id":{"number":5,"color":"YELLOW"}}]}</code></pre>
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "ball": {
+    "pos": [
+      -2800,
+      -1750,
+      0
+    ]
+  },
+  "bots": [
+    {
+      "obj": {
+        "pos": [
+          -2910,
+          -300,
+          -1.571
+        ]
+      },
+      "id": {
+        "number": 0,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2050,
+          1050,
+          0
+        ]
+      },
+      "id": {
+        "number": 1,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -800,
+          1000,
+          -0.785
+        ]
+      },
+      "id": {
+        "number": 2,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -1350,
+          350,
+          0
+        ]
+      },
+      "id": {
+        "number": 3,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -1550,
+          -600,
+          0
+        ]
+      },
+      "id": {
+        "number": 4,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2200,
+          -1200,
+          0.785
+        ]
+      },
+      "id": {
+        "number": 5,
+        "color": "YELLOW"
+      }
+    }
+  ]
+}</code></pre>
 </div>
 </div>
 <div class="imageblock">
@@ -1239,7 +1972,95 @@ Description: Free kick from within the field with five opponents and a goalkeepe
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="json">{"ball":{"pos":[-1300,650,0]},"bots":[{"obj":{"pos":[-2900,-150,0]},"id":{"number":0,"color":"YELLOW"}},{"obj":{"pos":[-2400,1250,0.785]},"id":{"number":1,"color":"YELLOW"}},{"obj":{"pos":[-2000,450,0]},"id":{"number":2,"color":"YELLOW"}},{"obj":{"pos":[-1300,0,1.571]},"id":{"number":3,"color":"YELLOW"}},{"obj":{"pos":[-1850,-300,-0.785]},"id":{"number":4,"color":"YELLOW"}},{"obj":{"pos":[-2000,-900,0]},"id":{"number":5,"color":"YELLOW"}}]}</code></pre>
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "ball": {
+    "pos": [
+      -1300,
+      650,
+      0
+    ]
+  },
+  "bots": [
+    {
+      "obj": {
+        "pos": [
+          -2900,
+          -150,
+          0
+        ]
+      },
+      "id": {
+        "number": 0,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2400,
+          1250,
+          0.785
+        ]
+      },
+      "id": {
+        "number": 1,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2000,
+          450,
+          0
+        ]
+      },
+      "id": {
+        "number": 2,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -1300,
+          0,
+          1.571
+        ]
+      },
+      "id": {
+        "number": 3,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -1850,
+          -300,
+          -0.785
+        ]
+      },
+      "id": {
+        "number": 4,
+        "color": "YELLOW"
+      }
+    },
+    {
+      "obj": {
+        "pos": [
+          -2000,
+          -900,
+          0
+        ]
+      },
+      "id": {
+        "number": 5,
+        "color": "YELLOW"
+      }
+    }
+  ]
+}</code></pre>
 </div>
 </div>
 <div class="imageblock">
@@ -1255,6 +2076,47 @@ Description: Free kick from within the field with five opponents and a goalkeepe
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_scenario_1_2">Scenario 1</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+    "ball": {
+        "pos": [
+            -850,
+            0,
+            0
+        ]
+    },
+    "bots": [
+        {
+            "obj": {
+                "pos": [
+                    -1000,
+                    0,
+                    0
+                ]
+            },
+            "id": {
+                "number": 0,
+                "color": "YELLOW"
+            }
+        },
+        {
+            "obj": {
+                "pos": [
+                    -500,
+                    0,
+                    3.14
+                ]
+            },
+            "id": {
+                "number": 0,
+                "color": "BLUE"
+            }
+        }
+    ]
+}</code></pre>
+</div>
+</div>
 <div class="imageblock">
 <div class="content">
 <object type="image/svg+xml" data="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIgogICAgIHZpZXdCb3g9IjAgMCA5OTIuMTMgMTI3NS41OSI+CiAgICA8ZGVmcz4KICAgICAgICA8c3R5bGU+CiAgICAgICAgICAgIC5jbHMtMSwuY2xzLTQsLmNscy01e2ZpbGw6bm9uZTt9LmNscy0ye2ZpbGw6Z3JlZW47fS5jbHMtM3tjbGlwLXBhdGg6dXJsKCNjbGlwLXBhdGgpO30uY2xzLTR7c3Ryb2tlOiNmZjA7fS5jbHMtNCwuY2xzLTV7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLXdpZHRoOjJweDt9LmNscy01e3N0cm9rZTojZmZmO30uY2xzLTYsLmNscy03e2lzb2xhdGlvbjppc29sYXRlO30uY2xzLTd7Zm9udC1zaXplOjE1cHg7ZmlsbDojZmZmO2ZvbnQtZmFtaWx5OkFyaWFsTVQsCiAgICAgICAgICAgIEFyaWFsO30uY2xzLTh7Y2xpcC1wYXRoOnVybCgjY2xpcC1wYXRoLTIpO30uY2xzLTl7ZmlsbDpsaW1lO30uY2xzLTEwe2ZpbGw6I2YwZjt9LmNscy0xMXtmaWxsOiNmZjA7fQogICAgICAgIDwvc3R5bGU+CiAgICAgICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgiPgogICAgICAgICAgICA8cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjkuMDciIHk9IjUyMC4zOCIgd2lkdGg9IjYzLjE3IiBoZWlnaHQ9IjIzNi4xNyIvPgogICAgICAgIDwvY2xpcFBhdGg+CiAgICAgICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgtMiI+CiAgICAgICAgICAgIDxyZWN0IGNsYXNzPSJjbHMtMSIgeD0iNjA5LjM5IiB5PSI2MDcuODciIHdpZHRoPSI0NS4zOCIgaGVpZ2h0PSI2MS4xOSIvPgogICAgICAgIDwvY2xpcFBhdGg+CiAgICA8L2RlZnM+CiAgICA8dGl0bGU+Um9ib0N1cENoYWxsZW5nZXM8L3RpdGxlPgogICAgPGcgaWQ9IkZpZWxkIj4KICAgICAgICA8cmVjdCBpZD0icmVjdDEyLTYiIGNsYXNzPSJjbHMtMiIgeD0iMS4xOSIgeT0iMC4wOCIgd2lkdGg9Ijk5Mi4xMyIgaGVpZ2h0PSIxMjc1LjU5Ii8+CiAgICAgICAgPGcgY2xhc3M9ImNscy0zIj4KICAgICAgICAgICAgPHJlY3QgaWQ9InJlY3QxMC0zIiBjbGFzcz0iY2xzLTQiIHg9IjI4LjgxIiB5PSI1MzguNjciIHdpZHRoPSI4NS4wNCIgaGVpZ2h0PSIxOTguNDMiLz4KICAgICAgICA8L2c+CiAgICAgICAgPHJlY3QgaWQ9InJlY3QxMiIgY2xhc3M9ImNscy01IiB4PSI3Mi4wNiIgeT0iNzAuOTUiIHdpZHRoPSI4NTAuMzkiIGhlaWdodD0iMTEzMy44NiIvPgogICAgICAgIDxyZWN0IGlkPSJyZWN0MTAiIGNsYXNzPSJjbHMtNSIgeD0iNzIuMDYiIHk9IjM1NC40MSIgd2lkdGg9IjIyNi43NyIgaGVpZ2h0PSI1NjYuOTMiLz4KICAgICAgICA8cGF0aCBpZD0icGF0aDg3MyIgY2xhc3M9ImNscy01IiBkPSJNOTIyLjQ1LDc3OS42MWExNDEuNzMsMTQxLjczLDAsMSwxLDAtMjgzLjQ2Ii8+CiAgICA8L2c+CiAgICA8ZyBpZD0idGV4dDE1NjAiIGNsYXNzPSJjbHMtNiI+CiAgICAgICAgPHRleHQgY2xhc3M9ImNscy03IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2MjcuMTQgNTczLjM3KSI+KC0xMDAwLCAwKTwvdGV4dD4KICAgICAgICA8dGV4dCBjbGFzcz0iY2xzLTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYyNy4xNCA1OTIuMTIpIj4wwro8L3RleHQ+CiAgICA8L2c+CiAgICA8ZyBpZD0iZzE1NTYiPgogICAgICAgIDxnIGNsYXNzPSJjbHMtOCI+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGgxMDQ1LTktNiIgY3g9IjYzOC4xNiIgY3k9IjYzOC4zMiIgcj0iMjUuNTEiLz4KICAgICAgICA8L2c+CiAgICAgICAgPGNpcmNsZSBpZD0icGF0aDkwMy01LTctODgiIGNsYXNzPSJjbHMtOSIgY3g9IjY0Ny45NyIgY3k9IjYyMi43NSIgcj0iNS42OSIvPgogICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtMy00MyIgY2xhc3M9ImNscy0xMCIgY3g9IjY0Ny45NyIgY3k9IjY1My45IiByPSI1LjY5Ii8+CiAgICAgICAgPGNpcmNsZSBpZD0icGF0aDkwMy01Ni0yLTYtMSIgY2xhc3M9ImNscy0xMSIgY3g9IjYzOC4wMiIgY3k9IjYzOC4zMiIgcj0iNy4xMSIvPgogICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtOS0xMi00OSIgY2xhc3M9ImNscy0xMCIgY3g9IjYyMi40NCIgY3k9IjYyOC4zNyIgcj0iNS42OSIvPgogICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtOS0xLTktMiIgY2xhc3M9ImNscy05IiBjeD0iNjIyLjQ0IiBjeT0iNjQ4LjI3IiByPSI1LjY5Ii8+CiAgICA8L2c+CiAgICA8aW1hZ2UgaWQ9ImltYWdlMTcwIiBjbGFzcz0iY2xzLTYiIHdpZHRoPSI1MyIgaGVpZ2h0PSI1MyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjU3Ljc2IDYzMy4xKSBzY2FsZSgwLjI0KSIKICAgICAgICAgICB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQURZQUFBQTJDQVlBQUFDTVJXcmRBQUFBQ1hCSVdYTUFBQzRqQUFBdUl3RjRwVDkyQUFBRDUwbEVRVlJvUTkyYXoyc2NaUmpIUDg4bTY2WWFVa05iZnh4RUVKcWtGNCsxb1RiZ1FYclFvNkZpUFJncE5DUzFvbUFGRVFRUEZhbUNwcGhrVFpZSXBhQ21pQmM5ZUt0TlNmc0h0S1QxNEErcXRRYmJKcWxKMk4zWng4TmsyTW51elB0bWs5MTAzbnh1ODc3ZmQrSEQ4ODdNdSs4N29xcHNSWnB0Z1pvNUxtMHMwNE93RDZVVG9RUFlCVHdFdEFIendIL0FMTXAxWUFhNGpNZDVjcm9RLzhPMUlYV3AySUMwVStJUXltR2dHMml5RFltZ2lEQ05jcFk4M3pDaGQyMERUR3hNYkVDZXd1TUU4QnFRc2FScllSbVlvTVFweHZSWFd6aUs5WWtOU0R0RlRpSWNvUkhUdVV3UnlKTG4vVm9yV0x0WXZ4eENHUUllc1VYcnlDM2dEYkk2YVFzR3JGMnNUMXA0Z0krQjQ3Wm9BemtEOUpQVlJWdHdiV0pIWlNmS0R3aDdiZEZOWUJxUEZ4blgyNmFRWFd4UW5xRElUMENYT2JpcFhLWEVRY2IwUmx6QUxIWk1kbERnQXJBblBuVGYrSVVVenpLaS8wUjFwcUlhQVhoYnRwSG5SNUlwQmJDYkV0L1RKeTFSbmZGaWkzeWVrSHZLUkRjWlBvM3FpSjZLL2lQOTYrcU9oQ0wwTXFyblZqVlZpUTFJT3g0emJPNTdhcVBjSWs5WCtDVmVQUldMbk1RdEtZQkhTZk5odUdGMXhmeTEzelVhdTB4cUZBVlNkRENpdjBGbHhUemV4VTBwZ0RUS084RkZ1V0wrdmZVWEVQbjRkSVJsOGp6T2hONHRWOHpqWmR5V0FtZ2hUUytzbm9xdnhJVGRRbmdWZ3FsNFZMWUQvN0srZjc1Sm8waUdIWDdGaEI2MmhoUkFNOHZzOThXVVp5eGh0eEM2ZzNzc1NYOUpObzdRR1lqdE5nWmRRK2tJeEZ4YlF0bllGWWkxR21QdTBSYUliVFBHM09QQlFHekpHSE9QeFVEc25qSG1Idk9CV09TR2lNUE1CaS9vNjVhZ2Exd0xLalpqakxtR2xNVXVHNE91VWVLU0wrWnhIdjlrWXl0UXhHUEtGOHZwQXNLMFpZQWJLRlBrZENFVmFqaHJpTHVEK0I1bHNTYSt4VDlKZEprbFlCTENZc042QitXcm1BR3VrQ09yYzFDNS9TWjhCQlNpUmpoQUFZOVBnb3ZWWWxuOUEvaXljb1FUQ01PTTYrL0JaZlVXZDRiM2dKdFY3Y25tYjVRUHdnM1ZZa002RDd4WjFaNWtoTUhnM2dxSVBoL0w2aVRLYUdSZjBsQk9NNnJmVlRiSEgvd1ZlQXNTL3RKV0x0SlMzcThQWXo2RDlqZFNmd2FlamcvZE42N2cwUlAzOVVCOHhRQ3lPa2VKRjRDcnh0em1jNFVVQjAyZlJKakZBTWIwQmg0SFNNcTBWQzdTeEFGRzlFOVR6QzRHTUs2M3lmQWNNR1NMTnBnenRQSTh3M3JIRnJSL3dGSkp2N3lFY2hwNHpCYXRJemNSamtVOS9lSllXOFhDak9vNTh1eFprV3YwOGlzUGZFYUdybHFrWUQwVkMzTkVucVNaRXlpdlU5OUR3eVVnQjV4YVdlYlZ6TWJFQXZya1lkTDBJaHdHOXJPK2Mrd2l5dFRLLzZuSnlwVkVyZFJITE15Z3RPTFJnN0lQb1JPbEU5aUp2NDIrSFpqRDM4ZWNSVmErQ1M1eGlUUVgrRUxydHIvNVA1WVRRZnFkc0o0dkFBQUFBRWxGVGtTdVFtQ0MiLz4KPC9zdmc+" width="700"><span class="alt">Interactive</span></object>
@@ -1263,6 +2125,47 @@ Description: Free kick from within the field with five opponents and a goalkeepe
 </div>
 <div class="sect2">
 <h3 id="_scenario_2_2">Scenario 2</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+    "ball": {
+        "pos": [
+            -894,
+            -1356,
+            0
+        ]
+    },
+    "bots": [
+        {
+            "obj": {
+                "pos": [
+                    -1000,
+                    -1250,
+                    -0.785
+                ]
+            },
+            "id": {
+                "number": 0,
+                "color": "YELLOW"
+            }
+        },
+        {
+            "obj": {
+                "pos": [
+                    -647,
+                    -1604,
+                    2.36
+                ]
+            },
+            "id": {
+                "number": 0,
+                "color": "BLUE"
+            }
+        }
+    ]
+}</code></pre>
+</div>
+</div>
 <div class="imageblock">
 <div class="content">
 <object type="image/svg+xml" data="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgOTkyLjEzIDEyNzUuNTkiPgogICAgPGRlZnM+CiAgICAgICAgPHN0eWxlPgogICAgICAgICAgICAuY2xzLTEsLmNscy00LC5jbHMtNXtmaWxsOm5vbmU7fS5jbHMtMntmaWxsOmdyZWVuO30uY2xzLTN7Y2xpcC1wYXRoOnVybCgjY2xpcC1wYXRoKTt9LmNscy00e3N0cm9rZTojZmYwO30uY2xzLTQsLmNscy01e3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS13aWR0aDoycHg7fS5jbHMtNXtzdHJva2U6I2ZmZjt9LmNscy02LC5jbHMtN3tpc29sYXRpb246aXNvbGF0ZTt9LmNscy03e2ZvbnQtc2l6ZToxNXB4O2ZpbGw6I2ZmZjtmb250LWZhbWlseTpBcmlhbE1ULAogICAgICAgICAgICBBcmlhbDt9LmNscy04e2NsaXAtcGF0aDp1cmwoI2NsaXAtcGF0aC0yKTt9LmNscy05e2ZpbGw6bGltZTt9LmNscy0xMHtmaWxsOiNmMGY7fS5jbHMtMTF7ZmlsbDojZmYwO30KICAgICAgICA8L3N0eWxlPgogICAgICAgIDxjbGlwUGF0aCBpZD0iY2xpcC1wYXRoIj4KICAgICAgICAgICAgPHJlY3QgY2xhc3M9ImNscy0xIiB4PSI3Ljg4IiB5PSI1MjEuOTYiIHdpZHRoPSI2My4xNyIgaGVpZ2h0PSIyMzYuMTciLz4KICAgICAgICA8L2NsaXBQYXRoPgogICAgICAgIDxjbGlwUGF0aCBpZD0iY2xpcC1wYXRoLTIiPgogICAgICAgICAgICA8cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjYwOS45IiB5PSI5NTkuNjQiIHdpZHRoPSI2MS4xOSIgaGVpZ2h0PSI0NS4zOCIKICAgICAgICAgICAgICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTUwNy4wMSA3NDAuNjEpIHJvdGF0ZSgtNDUpIi8+CiAgICAgICAgPC9jbGlwUGF0aD4KICAgIDwvZGVmcz4KICAgIDx0aXRsZT5Sb2JvQ3VwQ2hhbGxlbmdlczwvdGl0bGU+CiAgICA8ZyBpZD0iTGF5ZXJfMyIgZGF0YS1uYW1lPSJMYXllciAzIj4KICAgICAgICA8ZyBpZD0ibGF5ZXIxIj4KICAgICAgICAgICAgPHJlY3QgaWQ9InJlY3QxMi02IiBjbGFzcz0iY2xzLTIiIHk9IjEuNjciIHdpZHRoPSI5OTIuMTMiIGhlaWdodD0iMTI3NS41OSIvPgogICAgICAgICAgICA8ZyBjbGFzcz0iY2xzLTMiPgogICAgICAgICAgICAgICAgPHJlY3QgaWQ9InJlY3QxMC0zIiBjbGFzcz0iY2xzLTQiIHg9IjI3LjYzIiB5PSI1NDAuMjUiIHdpZHRoPSI4NS4wNCIgaGVpZ2h0PSIxOTguNDMiLz4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8cmVjdCBpZD0icmVjdDEyIiBjbGFzcz0iY2xzLTUiIHg9IjcwLjg3IiB5PSI3Mi41MyIgd2lkdGg9Ijg1MC4zOSIgaGVpZ2h0PSIxMTMzLjg2Ii8+CiAgICAgICAgICAgIDxyZWN0IGlkPSJyZWN0MTAiIGNsYXNzPSJjbHMtNSIgeD0iNzAuODciIHk9IjM1NiIgd2lkdGg9IjIyNi43NyIgaGVpZ2h0PSI1NjYuOTMiLz4KICAgICAgICAgICAgPHBhdGggaWQ9InBhdGg4NzMiIGNsYXNzPSJjbHMtNSIgZD0iTTkyMS4yNiw3ODEuMTlhMTQxLjczLDE0MS43MywwLDEsMSwwLTI4My40NiIvPgogICAgICAgIDwvZz4KICAgICAgICA8ZyBpZD0idGV4dDE1NjAiIGNsYXNzPSJjbHMtNiI+CiAgICAgICAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjQ0LjY1IDkyMi45MykiPigtMTAwMCwgLTEyNTApPC90ZXh0PgogICAgICAgICAgICA8dGV4dCBjbGFzcz0iY2xzLTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY0NC42NSA5NDEuNjgpIj4tNDXCujwvdGV4dD4KICAgICAgICA8L2c+CiAgICAgICAgPGcgaWQ9ImcxNTU2Ij4KICAgICAgICAgICAgPGcgY2xhc3M9ImNscy04Ij4KICAgICAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGgxMDQ1LTktNiIgY3g9IjY0NC44OSIgY3k9Ijk4Ni41MyIgcj0iMjUuNTEiCiAgICAgICAgICAgICAgICAgICAgICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01MDguNyA3NDQuOTYpIHJvdGF0ZSgtNDUpIi8+CiAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPGNpcmNsZSBpZD0icGF0aDkwMy01LTctODgiIGNsYXNzPSJjbHMtOSIgY3g9IjY2Mi44NCIgY3k9Ijk4Mi40NSIgcj0iNS42OSIvPgogICAgICAgICAgICA8Y2lyY2xlIGlkPSJwYXRoOTAzLTU2LTMtNDMiIGNsYXNzPSJjbHMtMTAiIGN4PSI2NDAuODEiIGN5PSIxMDA0LjQ4IiByPSI1LjY5Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtMi02LTEiIGNsYXNzPSJjbHMtMTEiIGN4PSI2NDQuNzkiIGN5PSI5ODYuNDMiIHI9IjcuMTEiLz4KICAgICAgICAgICAgPGNpcmNsZSBpZD0icGF0aDkwMy01Ni05LTEyLTQ5IiBjbGFzcz0iY2xzLTEwIiBjeD0iNjQwLjgxIiBjeT0iOTY4LjM4IiByPSI1LjY5Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtOS0xLTktMiIgY2xhc3M9ImNscy05IiBjeD0iNjI2Ljc0IiBjeT0iOTgyLjQ1IiByPSI1LjY5Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxpbWFnZSBpZD0iaW1hZ2UxNzAiIGNsYXNzPSJjbHMtNiIgd2lkdGg9IjUzIiBoZWlnaHQ9IjUzIgogICAgICAgICAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgwLjE3LCAwLjE3LCAtMC4xNywgMC4xNywgNjY0LjY5LCA5OTcuMzQpIgogICAgICAgICAgICAgICB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQURVQUFBQTFDQVlBQUFEaDVxTndBQUFBQ1hCSVdYTUFBQXNTQUFBTEVnSFMzWDc4QUFBRHlrbEVRVlJvUTkzYXo0dFZaUnpIOGRkemRKcXh4RW5VZml3aUNIUjAwN0ljeklFVzRhS1dpWkV0TWlSbE5LTWdnd2lDRmtaWVVFbzZOeDBNUktoR29rMHQycG1LK2djb1dvdCtvSmxKL2l3ZDd0eDdueFozTG5OSHo3Mm5Pei8wbm5udnpuUGV6NEVQejNQT2VjN3pQU0hHYU1yWUV1WVoxaWRZTHVvUkxNRWkzSWQ1dUlaL2NWSDBFMDdqaExKREJ1UDF4aGR1alREcFVQMWh2b28xb3JYb3hheXNMaW1VQk1kRUJ4UjlaVis4a3RXaEdSTVAxUjhlVTdZVkw2TXp3MjZGWWV4VHNkMmUrRXVXbkVicm9mckRmQ1hiQk9zeE8wdWZCQ1VVRkwzYjZzaTFGbXBqV0NQYWdRZXkxQ25rQWw1VGlFTlpZbzMvRjJwZDZIS1BEN0VsUzUxRzltT2pRcnlSSldhSDJoQVdpcjRUUE5GY3ZDTWNVL2FjdmZGU002bDVxRTNoRVNVL1lHbGo2WTV6U3NVcWUrTFpSa0xqVUp2REFpTU9ZMW02Y0ZmNVdlSXB1K05mYVNlVHRFWnZoam1LdnRlZWdXQ3hpbSt0QzExcEo5TkQzZkJwbTl4RHplalY2ZU8wRTdkUHYrcGorOHMwdVMwSlZodUlCOGMxalF2VkgrWXJPKzNPdm9jbXl3VkZTK3RmME9Pblg4azIrUW9FRCtyd2ZuM0QyRWhWMTNKblRPL1NaN29Za1ZoaWQveVYrcEVxZTFzK0EwR0g2SzNhUVhXa3F2ZlNIMGg5Uk9hRVlVVVAyeGV2VkVlcTdBWDVEZ1JkT3F4bWJQcTkyRVRPRDhGTEVPS3J1dkczaVgyeHRoc2xuUllrZ2o0ekl4RE1ObXhGSW5veXk4d1ZRVytpdlQ0ckprL1FrMkJ4bHBjcm9pV0ovQzJMc2xpVVlHNldsVFBtSlppVFplV01leFBjekxKeXhvMEUvMlJaT2VOYWd0VE5peHh6TVJtdFBzd2t6aVNxNVpTWlE2aUdPcEhsNVlxSzQ0bXlRNm9WaHBsQVNkbVJ4R0M4TGppV1plZUM2SWpCZUQwWlBUaVFvZWVEVU0xUkRUWEwxNm9WdkR4ekUwUFVRdTJLbDBWZk5PbVFCd1lWNGxYcXQ4aUNEekRTcUVlYk02THNvOXJCV0toQy9CMmZwL1ZvZTRKZDlzYmZhb2ZqdDUwN3ZZUHp0L1pwYy80VXZWZmZNRDdVam5nTnI4c1R3YWJhdlZUajl2cFVJUTZKQm01cmIwZWluUWJpTjdjMnB4ZmRScnhCbTcrUW82TzZ4dmJQNjJsYzg5MFF1dkVqSGs4WDdpb25sZlUxcXRLbmp4UVU0bFVWeitKVVErZnVjRkppVmJQZkRocUhnajN4ckxLVjJtVXFSa2ZOc3RMdWVLNloxandVN0kyWGRIb2FPN0xVYVdhL3VaNnhLMTdPRXJQL2VLbG5ZM2hldEJNUFphbFR5SG5CNXJTblhDT3lSNnFlZ1hoUTBiTFJZTk85cENyaUU1Mld0aEtJVmtlcW52WGhVYk50RmIxaWFndDJOekdJN2FOTHQ1YVplS2dhNjhMOU9xd1dyTVVLRTZzYmwwUkhScitIaG01ZEliVEs1RVBWc3luTVZkWW5XaTdvRWZWZ29lcldkamV1cXU0elhoUkcvNkd0T0s3RFlaL0ZLZHQvL0E5SWxqLzJ3Y2dJSGdBQUFBQkpSVTVFcmtKZ2dnPT0iLz4KICAgIDwvZz4KPC9zdmc+" width="700"><span class="alt">Interactive</span></object>
@@ -1271,6 +2174,47 @@ Description: Free kick from within the field with five opponents and a goalkeepe
 </div>
 <div class="sect2">
 <h3 id="_scenario_3_2">Scenario 3</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+    "ball": {
+        "pos": [
+            -394,
+            1606,
+            0
+        ]
+    },
+    "bots": [
+        {
+            "obj": {
+                "pos": [
+                    -500,
+                    1500,
+                    0.785
+                ]
+            },
+            "id": {
+                "number": 0,
+                "color": "YELLOW"
+            }
+        },
+        {
+            "obj": {
+                "pos": [
+                    -146,
+                    1854,
+                    -2.356
+                ]
+            },
+            "id": {
+                "number": 0,
+                "color": "BLUE"
+            }
+        }
+    ]
+}</code></pre>
+</div>
+</div>
 <div class="imageblock">
 <div class="content">
 <object type="image/svg+xml" data="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgOTkyLjEzIDEyNzUuNTkiPgogICAgPGRlZnM+CiAgICAgICAgPHN0eWxlPgogICAgICAgICAgICAuY2xzLTEsLmNscy00LC5jbHMtNXtmaWxsOm5vbmU7fS5jbHMtMntmaWxsOmdyZWVuO30uY2xzLTN7Y2xpcC1wYXRoOnVybCgjY2xpcC1wYXRoKTt9LmNscy00e3N0cm9rZTojZmYwO30uY2xzLTQsLmNscy01e3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS13aWR0aDoycHg7fS5jbHMtNXtzdHJva2U6I2ZmZjt9LmNscy02LC5jbHMtN3tpc29sYXRpb246aXNvbGF0ZTt9LmNscy03e2ZvbnQtc2l6ZToxNXB4O2ZpbGw6I2ZmZjtmb250LWZhbWlseTpBcmlhbE1ULAogICAgICAgICAgICBBcmlhbDt9LmNscy04e2NsaXAtcGF0aDp1cmwoI2NsaXAtcGF0aC0yKTt9LmNscy05e2ZpbGw6bGltZTt9LmNscy0xMHtmaWxsOiNmMGY7fS5jbHMtMTF7ZmlsbDojZmYwO30KICAgICAgICA8L3N0eWxlPgogICAgICAgIDxjbGlwUGF0aCBpZD0iY2xpcC1wYXRoIj4KICAgICAgICAgICAgPHJlY3QgY2xhc3M9ImNscy0xIiB4PSI3Ljg4IiB5PSI1MjAuNTQiIHdpZHRoPSI2My4xNyIgaGVpZ2h0PSIyMzYuMTciLz4KICAgICAgICA8L2NsaXBQYXRoPgogICAgICAgIDxjbGlwUGF0aCBpZD0iY2xpcC1wYXRoLTIiPgogICAgICAgICAgICA8cmVjdCBjbGFzcz0iY2xzLTEiIHg9Ijc2NC42MSIgeT0iMTYyLjg1IiB3aWR0aD0iNDUuMzgiIGhlaWdodD0iNjEuMTkiCiAgICAgICAgICAgICAgICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDkzLjgxIDYxMy4zNikgcm90YXRlKC00NSkiLz4KICAgICAgICA8L2NsaXBQYXRoPgogICAgPC9kZWZzPgogICAgPHRpdGxlPlJvYm9DdXBDaGFsbGVuZ2VzPC90aXRsZT4KICAgIDxnIGlkPSJMYXllcl80IiBkYXRhLW5hbWU9IkxheWVyIDQiPgogICAgICAgIDxnIGlkPSJsYXllcjEiPgogICAgICAgICAgICA8cmVjdCBpZD0icmVjdDEyLTYiIGNsYXNzPSJjbHMtMiIgeT0iMC4yNSIgd2lkdGg9Ijk5Mi4xMyIgaGVpZ2h0PSIxMjc1LjU5Ii8+CiAgICAgICAgICAgIDxnIGNsYXNzPSJjbHMtMyI+CiAgICAgICAgICAgICAgICA8cmVjdCBpZD0icmVjdDEwLTMiIGNsYXNzPSJjbHMtNCIgeD0iMjcuNjMiIHk9IjUzOC44MyIgd2lkdGg9Ijg1LjA0IiBoZWlnaHQ9IjE5OC40MyIvPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxyZWN0IGlkPSJyZWN0MTIiIGNsYXNzPSJjbHMtNSIgeD0iNzAuODciIHk9IjcxLjExIiB3aWR0aD0iODUwLjM5IiBoZWlnaHQ9IjExMzMuODYiLz4KICAgICAgICAgICAgPHJlY3QgaWQ9InJlY3QxMCIgY2xhc3M9ImNscy01IiB4PSI3MC44NyIgeT0iMzU0LjU4IiB3aWR0aD0iMjI2Ljc3IiBoZWlnaHQ9IjU2Ni45MyIvPgogICAgICAgICAgICA8cGF0aCBpZD0icGF0aDg3MyIgY2xhc3M9ImNscy01IiBkPSJNOTIxLjI2LDc3OS43OGExNDEuNzQsMTQxLjc0LDAsMCwxLDAtMjgzLjQ3Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxnIGlkPSJ0ZXh0MTU2MCIgY2xhc3M9ImNscy02Ij4KICAgICAgICAgICAgPHRleHQgY2xhc3M9ImNscy03IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3MzcuMSAxMzguNDcpIj4oLTUwMCwgMTUwMCk8L3RleHQ+CiAgICAgICAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzM3LjEgMTU3LjIyKSI+NDXCujwvdGV4dD4KICAgICAgICA8L2c+CiAgICAgICAgPGcgaWQ9ImcxNTU2Ij4KICAgICAgICAgICAgPGcgY2xhc3M9ImNscy04Ij4KICAgICAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGgxMDQ1LTktNiIgY3g9Ijc5MS41IiBjeT0iMTg5LjA0IiByPSIyNS41MSIKICAgICAgICAgICAgICAgICAgICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTguMTUgNjE1LjA0KSByb3RhdGUoLTQ1KSIvPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNS03LTg4IiBjbGFzcz0iY2xzLTkiIGN4PSI3ODcuNDIiIGN5PSIxNzEuMDkiIHI9IjUuNjkiLz4KICAgICAgICAgICAgPGNpcmNsZSBpZD0icGF0aDkwMy01Ni0zLTQzIiBjbGFzcz0iY2xzLTEwIiBjeD0iODA5LjQ1IiBjeT0iMTkzLjEyIiByPSI1LjY5Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtMi02LTEiIGNsYXNzPSJjbHMtMTEiIGN4PSI3OTEuNCIgY3k9IjE4OS4xNCIgcj0iNy4xMSIvPgogICAgICAgICAgICA8Y2lyY2xlIGlkPSJwYXRoOTAzLTU2LTktMTItNDkiIGNsYXNzPSJjbHMtMTAiIGN4PSI3NzMuMzUiIGN5PSIxOTMuMTIiIHI9IjUuNjkiLz4KICAgICAgICAgICAgPGNpcmNsZSBpZD0icGF0aDkwMy01Ni05LTEtOS0yIiBjbGFzcz0iY2xzLTkiIGN4PSI3ODcuNDIiIGN5PSIyMDcuMTkiIHI9IjUuNjkiLz4KICAgICAgICA8L2c+CiAgICAgICAgPGltYWdlIGlkPSJpbWFnZTE3MCIgY2xhc3M9ImNscy02IiB3aWR0aD0iNTMiIGhlaWdodD0iNTMiCiAgICAgICAgICAgICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDgwMi4zMSAxNjkuMjQpIHJvdGF0ZSgtNDUpIHNjYWxlKDAuMjQpIgogICAgICAgICAgICAgICB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQURVQUFBQTFDQVlBQUFEaDVxTndBQUFBQ1hCSVdYTUFBQXNTQUFBTEVnSFMzWDc4QUFBRHlrbEVRVlJvUTkzYXo0dFZaUnpIOGRkemRKcXh4RW5VZml3aUNIUjAwN0ljeklFVzRhS1dpWkV0TWlSbE5LTWdnd2lDRmtaWVVFbzZOeDBNUktoR29rMHQycG1LK2djb1dvdCtvSmxKL2l3ZDd0eDdueFozTG5OSHo3Mm5Pei8wbm5udnpuUGV6NEVQejNQT2VjN3pQU0hHYU1yWUV1WVoxaWRZTHVvUkxNRWkzSWQ1dUlaL2NWSDBFMDdqaExKREJ1UDF4aGR1alREcFVQMWh2b28xb3JYb3hheXNMaW1VQk1kRUJ4UjlaVis4a3RXaEdSTVAxUjhlVTdZVkw2TXp3MjZGWWV4VHNkMmUrRXVXbkVicm9mckRmQ1hiQk9zeE8wdWZCQ1VVRkwzYjZzaTFGbXBqV0NQYWdRZXkxQ25rQWw1VGlFTlpZbzMvRjJwZDZIS1BEN0VsUzUxRzltT2pRcnlSSldhSDJoQVdpcjRUUE5GY3ZDTWNVL2FjdmZGU002bDVxRTNoRVNVL1lHbGo2WTV6U3NVcWUrTFpSa0xqVUp2REFpTU9ZMW02Y0ZmNVdlSXB1K05mYVNlVHRFWnZoam1LdnRlZWdXQ3hpbSt0QzExcEo5TkQzZkJwbTl4RHplalY2ZU8wRTdkUHYrcGorOHMwdVMwSlZodUlCOGMxalF2VkgrWXJPKzNPdm9jbXl3VkZTK3RmME9Pblg4azIrUW9FRCtyd2ZuM0QyRWhWMTNKblRPL1NaN29Za1ZoaWQveVYrcEVxZTFzK0EwR0g2SzNhUVhXa3F2ZlNIMGg5Uk9hRVlVVVAyeGV2VkVlcTdBWDVEZ1JkT3F4bWJQcTkyRVRPRDhGTEVPS3J1dkczaVgyeHRoc2xuUllrZ2o0ekl4RE1ObXhGSW5veXk4d1ZRVytpdlQ0ckprL1FrMkJ4bHBjcm9pV0ovQzJMc2xpVVlHNldsVFBtSlppVFplV01leFBjekxKeXhvMEUvMlJaT2VOYWd0VE5peHh6TVJtdFBzd2t6aVNxNVpTWlE2aUdPcEhsNVlxSzQ0bXlRNm9WaHBsQVNkbVJ4R0M4TGppV1plZUM2SWpCZUQwWlBUaVFvZWVEVU0xUkRUWEwxNm9WdkR4ekUwUFVRdTJLbDBWZk5PbVFCd1lWNGxYcXQ4aUNEekRTcUVlYk02THNvOXJCV0toQy9CMmZwL1ZvZTRKZDlzYmZhb2ZqdDUwN3ZZUHp0L1pwYy80VXZWZmZNRDdVam5nTnI4c1R3YWJhdlZUajl2cFVJUTZKQm01cmIwZWluUWJpTjdjMnB4ZmRScnhCbTcrUW82TzZ4dmJQNjJsYzg5MFF1dkVqSGs4WDdpb25sZlUxcXRLbmp4UVU0bFVWeitKVVErZnVjRkppVmJQZkRocUhnajN4ckxLVjJtVXFSa2ZOc3RMdWVLNloxandVN0kyWGRIb2FPN0xVYVdhL3VaNnhLMTdPRXJQL2VLbG5ZM2hldEJNUFphbFR5SG5CNXJTblhDT3lSNnFlZ1hoUTBiTFJZTk85cENyaUU1Mld0aEtJVmtlcW52WGhVYk50RmIxaWFndDJOekdJN2FOTHQ1YVplS2dhNjhMOU9xd1dyTVVLRTZzYmwwUkhScitIaG01ZEliVEs1RVBWc3luTVZkWW5XaTdvRWZWZ29lcldkamV1cXU0elhoUkcvNkd0T0s3RFlaL0ZLZHQvL0E5SWxqLzJ3Y2dJSGdBQUFBQkpSVTVFcmtKZ2dnPT0iLz4KICAgIDwvZz4KPC9zdmc+" width="700"><span class="alt">Interactive</span></object>
@@ -1279,6 +2223,47 @@ Description: Free kick from within the field with five opponents and a goalkeepe
 </div>
 <div class="sect2">
 <h3 id="_scenario_4_2">Scenario 4</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+    "ball": {
+        "pos": [
+            -1894,
+            -1306,
+            0
+        ]
+    },
+    "bots": [
+        {
+            "obj": {
+                "pos": [
+                    -2000,
+                    -1200,
+                    -0.785
+                ]
+            },
+            "id": {
+                "number": 0,
+                "color": "YELLOW"
+            }
+        },
+        {
+            "obj": {
+                "pos": [
+                    -1646,
+                    -1554,
+                    2.36
+                ]
+            },
+            "id": {
+                "number": 0,
+                "color": "BLUE"
+            }
+        }
+    ]
+}</code></pre>
+</div>
+</div>
 <div class="imageblock">
 <div class="content">
 <object type="image/svg+xml" data="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgOTkyLjEzIDEyNzUuNTkiPgogICAgPGRlZnM+CiAgICAgICAgPHN0eWxlPgogICAgICAgICAgICAuY2xzLTEsLmNscy00LC5jbHMtNXtmaWxsOm5vbmU7fS5jbHMtMntmaWxsOmdyZWVuO30uY2xzLTN7Y2xpcC1wYXRoOnVybCgjY2xpcC1wYXRoKTt9LmNscy00e3N0cm9rZTojZmYwO30uY2xzLTQsLmNscy01e3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS13aWR0aDoycHg7fS5jbHMtNXtzdHJva2U6I2ZmZjt9LmNscy02LC5jbHMtN3tpc29sYXRpb246aXNvbGF0ZTt9LmNscy03e2ZvbnQtc2l6ZToxNXB4O2ZpbGw6I2ZmZjtmb250LWZhbWlseTpBcmlhbE1ULAogICAgICAgICAgICBBcmlhbDt9LmNscy04e2NsaXAtcGF0aDp1cmwoI2NsaXAtcGF0aC0yKTt9LmNscy05e2ZpbGw6bGltZTt9LmNscy0xMHtmaWxsOiNmMGY7fS5jbHMtMTF7ZmlsbDojZmYwO30KICAgICAgICA8L3N0eWxlPgogICAgICAgIDxjbGlwUGF0aCBpZD0iY2xpcC1wYXRoIj4KICAgICAgICAgICAgPHJlY3QgY2xhc3M9ImNscy0xIiB4PSI3Ljg4IiB5PSI1MjAuMyIgd2lkdGg9IjYzLjE3IiBoZWlnaHQ9IjIzNi4xNyIvPgogICAgICAgIDwvY2xpcFBhdGg+CiAgICAgICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgtMiI+CiAgICAgICAgICAgIDxyZWN0IGNsYXNzPSJjbHMtMSIgeD0iMzEwLjIxIiB5PSI5NDQuMDMiIHdpZHRoPSI2MS4xOSIgaGVpZ2h0PSI0NS4zOCIKICAgICAgICAgICAgICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTU4My43NSA1MjQuMTMpIHJvdGF0ZSgtNDUpIi8+CiAgICAgICAgPC9jbGlwUGF0aD4KICAgIDwvZGVmcz4KICAgIDx0aXRsZT5Sb2JvQ3VwQ2hhbGxlbmdlczwvdGl0bGU+CiAgICA8ZyBpZD0iTGF5ZXJfNSIgZGF0YS1uYW1lPSJMYXllciA1Ij4KICAgICAgICA8ZyBpZD0ibGF5ZXIxIj4KICAgICAgICAgICAgPHJlY3QgaWQ9InJlY3QxMi02IiBjbGFzcz0iY2xzLTIiIHdpZHRoPSI5OTIuMTMiIGhlaWdodD0iMTI3NS41OSIvPgogICAgICAgICAgICA8ZyBjbGFzcz0iY2xzLTMiPgogICAgICAgICAgICAgICAgPHJlY3QgaWQ9InJlY3QxMC0zIiBjbGFzcz0iY2xzLTQiIHg9IjI3LjYzIiB5PSI1MzguNTgiIHdpZHRoPSI4NS4wNCIgaGVpZ2h0PSIxOTguNDMiLz4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8cmVjdCBpZD0icmVjdDEyIiBjbGFzcz0iY2xzLTUiIHg9IjcwLjg3IiB5PSI3MC44NyIgd2lkdGg9Ijg1MC4zOSIgaGVpZ2h0PSIxMTMzLjg2Ii8+CiAgICAgICAgICAgIDxyZWN0IGlkPSJyZWN0MTAiIGNsYXNzPSJjbHMtNSIgeD0iNzAuODciIHk9IjM1NC4zMyIgd2lkdGg9IjIyNi43NyIgaGVpZ2h0PSI1NjYuOTMiLz4KICAgICAgICAgICAgPHBhdGggaWQ9InBhdGg4NzMiIGNsYXNzPSJjbHMtNSIgZD0iTTkyMS4yNiw3NzkuNTNhMTQxLjc0LDE0MS43NCwwLDAsMSwwLTI4My40NyIvPgogICAgICAgIDwvZz4KICAgICAgICA8ZyBpZD0idGV4dDE1NjAiIGNsYXNzPSJjbHMtNiI+CiAgICAgICAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzUyLjUgOTExLjg5KSI+KC0yMDAwLCAtMTIwMCk8L3RleHQ+CiAgICAgICAgICAgIDx0ZXh0IGNsYXNzPSJjbHMtNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzUyLjUgOTMwLjY0KSI+LTQ1wro8L3RleHQ+CiAgICAgICAgPC9nPgogICAgICAgIDxnIGlkPSJnMTU1NiI+CiAgICAgICAgICAgIDxnIGNsYXNzPSJjbHMtOCI+CiAgICAgICAgICAgICAgICA8Y2lyY2xlIGlkPSJwYXRoMTA0NS05LTYiIGN4PSIzNDUuMjEiIGN5PSI5NzAuOTIiIHI9IjI1LjUxIgogICAgICAgICAgICAgICAgICAgICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTg1LjQ0IDUyOC40OCkgcm90YXRlKC00NSkiLz4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8Y2lyY2xlIGlkPSJwYXRoOTAzLTUtNy04OCIgY2xhc3M9ImNscy05IiBjeD0iMzYzLjE2IiBjeT0iOTY2Ljg0IiByPSI1LjY5Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtMy00MyIgY2xhc3M9ImNscy0xMCIgY3g9IjM0MS4xMyIgY3k9Ijk4OC44NyIgcj0iNS42OSIvPgogICAgICAgICAgICA8Y2lyY2xlIGlkPSJwYXRoOTAzLTU2LTItNi0xIiBjbGFzcz0iY2xzLTExIiBjeD0iMzQ1LjExIiBjeT0iOTcwLjgyIiByPSI3LjExIi8+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtOS0xMi00OSIgY2xhc3M9ImNscy0xMCIgY3g9IjM0MS4xMyIgY3k9Ijk1Mi43NyIgcj0iNS42OSIvPgogICAgICAgICAgICA8Y2lyY2xlIGlkPSJwYXRoOTAzLTU2LTktMS05LTIiIGNsYXNzPSJjbHMtOSIgY3g9IjMyNy4wNiIgY3k9Ijk2Ni44NCIgcj0iNS42OSIvPgogICAgICAgIDwvZz4KICAgICAgICA8aW1hZ2UgaWQ9ImltYWdlMTcwIiBjbGFzcz0iY2xzLTYiIHdpZHRoPSI1MyIgaGVpZ2h0PSI1MyIKICAgICAgICAgICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMC4xNywgMC4xNywgLTAuMTcsIDAuMTcsIDM2NS4wMSwgOTgxLjczKSIKICAgICAgICAgICAgICAgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFEVUFBQUExQ0FZQUFBRGg1cU53QUFBQUNYQklXWE1BQUFzU0FBQUxFZ0hTM1g3OEFBQUR5a2xFUVZSb1E5M2F6NHRWWlJ6SDhkZHpkSnF4eEVuVWZpd2lDSFIwMDdJY3pJRVc0YUtXaVpFdE1pUmxOS01nZ3dpQ0ZrWllVRW82TngwTVJLaEdvazB0MnBtSytnY29Xb3Qrb0psSi9pd2Q3dHg3bnhaM0xuTkh6NzJuT3ovMG5ubnZ6blBlejRFUHozUE9lYzd6UFNIR2FNcllFdVlaMWlkWUx1b1JMTUVpM0lkNXVJWi9jVkgwRTA3amhMSkRCdVAxeGhkdWpURHBVUDFodm9vMW9yWG94YXlzTGltVUJNZEVCeFI5WlYrOGt0V2hHUk1QMVI4ZVU3WVZMNk16dzI2RllleFRzZDJlK0V1V25FYnJvZnJEZkNYYkJPc3hPMHVmQkNVVUZMM2I2c2kxRm1waldDUGFnUWV5MUNua0FsNVRpRU5aWW8zL0YycGQ2SEtQRDdFbFM1MUc5bU9qUXJ5UkpXYUgyaEFXaXI0VFBORmN2Q01jVS9hY3ZmRlNNNmw1cUUzaEVTVS9ZR2xqNlk1elNzVXFlK0xaUmtMalVKdkRBaU1PWTFtNmNGZjVXZUlwdStOZmFTZVR0RVp2aGptS3Z0ZWVnV0N4aW0rdEMxMXBKOU5EM2ZCcG05eER6ZWpWNmVPMEU3ZFB2K3BqKzhzMHVTMEpWaHVJQjhjMWpRdlZIK1lyTyszT3ZvY215d1ZGUyt0ZjBPT25YOGsyK1FvRUQrcndmbjNEMkVoVjEzSm5UTy9TWjdvWWtWaGlkL3lWK3BFcWUxcytBMEdINkszYVFYV2txdmZTSDBoOVJPYUVZVVVQMnhldlZFZXE3QVg1RGdSZE9xeG1iUHE5MkVUT0Q4RkxFT0tydXZHM2lYMnh0aHNsblJZa2dqNHpJeERNTm14Rklub3l5OHdWUVcraXZUNHJKay9RazJCeGxwY3JvaVdKL0MyTHNsaVVZRzZXbFRQbUpaaVRaZVdNZXhQY3pMSnl4bzBFLzJSWk9lTmFndFROaXh4ek1SbXRQc3dremlTcTVaU1pRNmlHT3BIbDVZcUs0NG15UTZvVmhwbEFTZG1SeEdDOExqaVdaZWVDNklqQmVEMFpQVGlRb2VlRFVNMVJEVFhMMTZvVnZEeHpFMFBVUXUyS2wwVmZOT21RQndZVjRsWHF0OGlDRHpEU3FFZWJNNkxzbzlyQldLaEMvQjJmcC9Wb2U0SmQ5c2JmYW9manQ1MDd2WVB6dC9acGMvNFV2VmZmTUQ3VWpuZ05yOHNUd2FiYXZWVGo5dnBVSVE2SkJtNXJiMGVpblFiaU43YzJweGZkUnJ4Qm03K1FvNk82eHZiUDYybGM4OTBRdXZFakhrOFg3aW9ubGZVMXF0S25qeFFVNGxVVnorSlVRK2Z1Y0ZKaVZiUGZEaHFIZ2ozeHJMS1YybVVxUmtmTnN0THVlSzZaMWp3VTdJMlhkSG9hTzdMVWFXYS91WjZ4SzE3T0VyUC9lS2xuWTNoZXRCTVBaYWxUeUhuQjVyU25YQ095UjZxZWdYaFEwYkxSWU5POXBDcmlFNTJXdGhLSVZrZXFudlhoVWJOdEZiMWlhZ3QyTnpHSTdhTkx0NWFaZUtnYTY4TDlPcXdXck1VS0U2c2JsMFJIUnIrSGhtNWRJYlRLNUVQVnN5bk1WZFluV2k3b0VmVmdvZXJXZGpldXF1NHpYaFJHLzZHdE9LN0RZWi9GS2R0Ly9BOUlsai8yd2NnSUhnQUFBQUJKUlU1RXJrSmdnZz09Ii8+CiAgICA8L2c+Cjwvc3ZnPg==" width="700"><span class="alt">Interactive</span></object>
@@ -1287,6 +2272,47 @@ Description: Free kick from within the field with five opponents and a goalkeepe
 </div>
 <div class="sect2">
 <h3 id="_scenario_5_2">Scenario 5</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+    "ball": {
+        "pos": [
+            -2740,
+            1400,
+            0
+        ]
+    },
+    "bots": [
+        {
+            "obj": {
+                "pos": [
+                    -2740,
+                    1250,
+                    1.57
+                ]
+            },
+            "id": {
+                "number": 0,
+                "color": "YELLOW"
+            }
+        },
+        {
+            "obj": {
+                "pos": [
+                    -2740,
+                    1750,
+                    -1.57
+                ]
+            },
+            "id": {
+                "number": 0,
+                "color": "BLUE"
+            }
+        }
+    ]
+}</code></pre>
+</div>
+</div>
 <div class="imageblock">
 <div class="content">
 <object type="image/svg+xml" data="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgOTkyLjEzIDEyNzUuNTkiPgogICAgPGRlZnM+CiAgICAgICAgPHN0eWxlPgogICAgICAgICAgICAuY2xzLTEsLmNscy00LC5jbHMtNXtmaWxsOm5vbmU7fS5jbHMtMntmaWxsOmdyZWVuO30uY2xzLTN7Y2xpcC1wYXRoOnVybCgjY2xpcC1wYXRoKTt9LmNscy00e3N0cm9rZTojZmYwO30uY2xzLTQsLmNscy01e3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS13aWR0aDoycHg7fS5jbHMtNXtzdHJva2U6I2ZmZjt9LmNscy02LC5jbHMtN3tpc29sYXRpb246aXNvbGF0ZTt9LmNscy03e2ZvbnQtc2l6ZToxNXB4O2ZpbGw6I2ZmZjtmb250LWZhbWlseTpBcmlhbE1ULAogICAgICAgICAgICBBcmlhbDt9LmNscy04e2NsaXAtcGF0aDp1cmwoI2NsaXAtcGF0aC0yKTt9LmNscy05e2ZpbGw6bGltZTt9LmNscy0xMHtmaWxsOiNmMGY7fS5jbHMtMTF7ZmlsbDojZmYwO30KICAgICAgICA8L3N0eWxlPgogICAgICAgIDxjbGlwUGF0aCBpZD0iY2xpcC1wYXRoIj4KICAgICAgICAgICAgPHJlY3QgY2xhc3M9ImNscy0xIiB4PSI3Ljg4IiB5PSI1MjEuMTMiIHdpZHRoPSI2My4xNyIgaGVpZ2h0PSIyMzYuMTciLz4KICAgICAgICA8L2NsaXBQYXRoPgogICAgICAgIDxjbGlwUGF0aCBpZD0iY2xpcC1wYXRoLTIiPgogICAgICAgICAgICA8cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjE0Mi41NSIgeT0iMjg5LjEyIiB3aWR0aD0iNjEuMTkiIGhlaWdodD0iNDUuMzgiLz4KICAgICAgICA8L2NsaXBQYXRoPgogICAgPC9kZWZzPgogICAgPHRpdGxlPlJvYm9DdXBDaGFsbGVuZ2VzPC90aXRsZT4KICAgIDxnIGlkPSJMYXllcl82IiBkYXRhLW5hbWU9IkxheWVyIDYiPgogICAgICAgIDxnIGlkPSJsYXllcjEiPgogICAgICAgICAgICA8cmVjdCBpZD0icmVjdDEyLTYiIGNsYXNzPSJjbHMtMiIgeT0iMC44MyIgd2lkdGg9Ijk5Mi4xMyIgaGVpZ2h0PSIxMjc1LjU5Ii8+CiAgICAgICAgICAgIDxnIGNsYXNzPSJjbHMtMyI+CiAgICAgICAgICAgICAgICA8cmVjdCBpZD0icmVjdDEwLTMiIGNsYXNzPSJjbHMtNCIgeD0iMjcuNjMiIHk9IjUzOS40MSIgd2lkdGg9Ijg1LjA0IiBoZWlnaHQ9IjE5OC40MyIvPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxyZWN0IGlkPSJyZWN0MTIiIGNsYXNzPSJjbHMtNSIgeD0iNzAuODciIHk9IjcxLjciIHdpZHRoPSI4NTAuMzkiIGhlaWdodD0iMTEzMy44NiIvPgogICAgICAgICAgICA8cmVjdCBpZD0icmVjdDEwIiBjbGFzcz0iY2xzLTUiIHg9IjcwLjg3IiB5PSIzNTUuMTYiIHdpZHRoPSIyMjYuNzciIGhlaWdodD0iNTY2LjkzIi8+CiAgICAgICAgICAgIDxwYXRoIGlkPSJwYXRoODczIiBjbGFzcz0iY2xzLTUiIGQ9Ik05MjEuMjYsNzgwLjM2YTE0MS43NCwxNDEuNzQsMCwwLDEsMC0yODMuNDciLz4KICAgICAgICA8L2c+CiAgICAgICAgPGcgaWQ9InRleHQxNTYwIiBjbGFzcz0iY2xzLTYiPgogICAgICAgICAgICA8dGV4dCBjbGFzcz0iY2xzLTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwNC43MyAyNTQuMDYpIj4oLTI3NDAsIDEyNTApPC90ZXh0PgogICAgICAgICAgICA8dGV4dCBjbGFzcz0iY2xzLTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwNC43MyAyNzIuODEpIj45MMK6PC90ZXh0PgogICAgICAgIDwvZz4KICAgICAgICA8ZyBpZD0iZzE1NTYiPgogICAgICAgICAgICA8ZyBjbGFzcz0iY2xzLTgiPgogICAgICAgICAgICAgICAgPGNpcmNsZSBpZD0icGF0aDEwNDUtOS02IiBjeD0iMTczLjAxIiBjeT0iMzA1LjcyIiByPSIyNS41MSIvPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNS03LTg4IiBjbGFzcz0iY2xzLTkiIGN4PSIxNTcuNDMiIGN5PSIyOTUuOTEiIHI9IjUuNjkiLz4KICAgICAgICAgICAgPGNpcmNsZSBpZD0icGF0aDkwMy01Ni0zLTQzIiBjbGFzcz0iY2xzLTEwIiBjeD0iMTg4LjU4IiBjeT0iMjk1LjkxIiByPSI1LjY5Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtMi02LTEiIGNsYXNzPSJjbHMtMTEiIGN4PSIxNzMuMDEiIGN5PSIzMDUuODYiIHI9IjcuMTEiLz4KICAgICAgICAgICAgPGNpcmNsZSBpZD0icGF0aDkwMy01Ni05LTEyLTQ5IiBjbGFzcz0iY2xzLTEwIiBjeD0iMTYzLjA1IiBjeT0iMzIxLjQ0IiByPSI1LjY5Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9InBhdGg5MDMtNTYtOS0xLTktMiIgY2xhc3M9ImNscy05IiBjeD0iMTgyLjk2IiBjeT0iMzIxLjQ0IiByPSI1LjY5Ii8+CiAgICAgICAgPC9nPgogICAgICAgIDxpbWFnZSBpZD0iaW1hZ2UxNzAiIGNsYXNzPSJjbHMtNiIgd2lkdGg9IjUzIiBoZWlnaHQ9IjUzIgogICAgICAgICAgICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjYuNjUgMjg0LjA3KSByb3RhdGUoLTkwKSBzY2FsZSgwLjI0KSIKICAgICAgICAgICAgICAgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFEVUFBQUExQ0FZQUFBRGg1cU53QUFBQUNYQklXWE1BQUFzU0FBQUxFZ0hTM1g3OEFBQUR5a2xFUVZSb1E5M2F6NHRWWlJ6SDhkZHpkSnF4eEVuVWZpd2lDSFIwMDdJY3pJRVc0YUtXaVpFdE1pUmxOS01nZ3dpQ0ZrWllVRW82TngwTVJLaEdvazB0MnBtSytnY29Xb3Qrb0psSi9pd2Q3dHg3bnhaM0xuTkh6NzJuT3ovMG5ubnZ6blBlejRFUHozUE9lYzd6UFNIR2FNcllFdVlaMWlkWUx1b1JMTUVpM0lkNXVJWi9jVkgwRTA3amhMSkRCdVAxeGhkdWpURHBVUDFodm9vMW9yWG94YXlzTGltVUJNZEVCeFI5WlYrOGt0V2hHUk1QMVI4ZVU3WVZMNk16dzI2RllleFRzZDJlK0V1V25FYnJvZnJEZkNYYkJPc3hPMHVmQkNVVUZMM2I2c2kxRm1waldDUGFnUWV5MUNua0FsNVRpRU5aWW8zL0YycGQ2SEtQRDdFbFM1MUc5bU9qUXJ5UkpXYUgyaEFXaXI0VFBORmN2Q01jVS9hY3ZmRlNNNmw1cUUzaEVTVS9ZR2xqNlk1elNzVXFlK0xaUmtMalVKdkRBaU1PWTFtNmNGZjVXZUlwdStOZmFTZVR0RVp2aGptS3Z0ZWVnV0N4aW0rdEMxMXBKOU5EM2ZCcG05eER6ZWpWNmVPMEU3ZFB2K3BqKzhzMHVTMEpWaHVJQjhjMWpRdlZIK1lyTyszT3ZvY215d1ZGUyt0ZjBPT25YOGsyK1FvRUQrcndmbjNEMkVoVjEzSm5UTy9TWjdvWWtWaGlkL3lWK3BFcWUxcytBMEdINkszYVFYV2txdmZTSDBoOVJPYUVZVVVQMnhldlZFZXE3QVg1RGdSZE9xeG1iUHE5MkVUT0Q4RkxFT0tydXZHM2lYMnh0aHNsblJZa2dqNHpJeERNTm14Rklub3l5OHdWUVcraXZUNHJKay9RazJCeGxwY3JvaVdKL0MyTHNsaVVZRzZXbFRQbUpaaVRaZVdNZXhQY3pMSnl4bzBFLzJSWk9lTmFndFROaXh4ek1SbXRQc3dremlTcTVaU1pRNmlHT3BIbDVZcUs0NG15UTZvVmhwbEFTZG1SeEdDOExqaVdaZWVDNklqQmVEMFpQVGlRb2VlRFVNMVJEVFhMMTZvVnZEeHpFMFBVUXUyS2wwVmZOT21RQndZVjRsWHF0OGlDRHpEU3FFZWJNNkxzbzlyQldLaEMvQjJmcC9Wb2U0SmQ5c2JmYW9manQ1MDd2WVB6dC9acGMvNFV2VmZmTUQ3VWpuZ05yOHNUd2FiYXZWVGo5dnBVSVE2SkJtNXJiMGVpblFiaU43YzJweGZkUnJ4Qm03K1FvNk82eHZiUDYybGM4OTBRdXZFakhrOFg3aW9ubGZVMXF0S25qeFFVNGxVVnorSlVRK2Z1Y0ZKaVZiUGZEaHFIZ2ozeHJMS1YybVVxUmtmTnN0THVlSzZaMWp3VTdJMlhkSG9hTzdMVWFXYS91WjZ4SzE3T0VyUC9lS2xuWTNoZXRCTVBaYWxUeUhuQjVyU25YQ095UjZxZWdYaFEwYkxSWU5POXBDcmlFNTJXdGhLSVZrZXFudlhoVWJOdEZiMWlhZ3QyTnpHSTdhTkx0NWFaZUtnYTY4TDlPcXdXck1VS0U2c2JsMFJIUnIrSGhtNWRJYlRLNUVQVnN5bk1WZFluV2k3b0VmVmdvZXJXZGpldXF1NHpYaFJHLzZHdE9LN0RZWi9GS2R0Ly9BOUlsai8yd2NnSUhnQUFBQUJKUlU1RXJrSmdnZz09Ii8+CiAgICA8L2c+Cjwvc3ZnPg==" width="700"><span class="alt">Interactive</span></object>
@@ -1298,8 +2324,15 @@ Description: Free kick from within the field with five opponents and a goalkeepe
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-06-15 06:53:52 UTC
+Last updated 2021-06-16 07:53:16 UTC
 </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
+<script>
+if (!hljs.initHighlighting.called) {
+  hljs.initHighlighting.called = true
+  ;[].slice.call(document.querySelectorAll('pre.highlight > code')).forEach(function (el) { hljs.highlightBlock(el) })
+}
+</script>
 </body>
 </html>
